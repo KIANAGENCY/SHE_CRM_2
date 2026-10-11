@@ -1,0 +1,80 @@
+{
+  "fileKey": "Qs3uCDg51cxgPDhVQqajBF",
+  "date": "2026-10-05",
+  "screen": {
+    "id": "53:852",
+    "name": "29 · Inicio móvil / Sara IA",
+    "width": 390,
+    "height": 798,
+    "texts": [
+      {
+        "id": "53:853",
+        "text": "HOTEL EXPERT"
+      },
+      {
+        "id": "53:854",
+        "text": "Tu operación de hoy"
+      },
+      {
+        "id": "53:855",
+        "text": "Administración · Datos de demostración"
+      },
+      {
+        "id": "I53:857;3:103",
+        "text": "Por enviar"
+      },
+      {
+        "id": "I53:857;3:104",
+        "text": "04"
+      },
+      {
+        "id": "I53:857;3:105",
+        "text": "Ver despachos"
+      },
+      {
+        "id": "I53:862;3:103",
+        "text": "Atrasadas"
+      },
+      {
+        "id": "I53:862;3:104",
+        "text": "03"
+      },
+      {
+        "id": "I53:862;3:105",
+        "text": "Revisar pedidos"
+      },
+      {
+        "id": "53:868",
+        "text": "Sara IA"
+      },
+      {
+        "id": "53:869",
+        "text": "Asesora y busca cerrar directamente. La muestra es opcional."
+      },
+      {
+        "id": "I53:870;3:76",
+        "text": "Abrir atención"
+      },
+      {
+        "id": "53:874",
+        "text": "Sin recompra >30 días"
+      },
+      {
+        "id": "53:875",
+        "text": "8 clientes necesitan seguimiento. Consulta su historial y próxima acción."
+      },
+      {
+        "id": "I53:876;3:76",
+        "text": "Ver clientes"
+      },
+      {
+        "id": "I53:880;3:74",
+        "text": "Pipeline comercial"
+      },
+      {
+        "id": "I53:883;3:76",
+        "text": "Agenda del día"
+      }
+    ]
+  }
+}

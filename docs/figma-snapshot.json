@@ -1,0 +1,4770 @@
+{
+  "fileKey": "Qs3uCDg51cxgPDhVQqajBF",
+  "date": "2026-10-05",
+  "screens": [
+    {
+      "id": "3:108",
+      "name": "01 · Inicio / Administración",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I5:3090;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I5:3093;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I5:3095;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "49:971",
+          "text": "Tu operación de hoy"
+        },
+        {
+          "id": "49:972",
+          "text": "Lunes, 5 de octubre de 2026 · Datos de demostración · Administración"
+        },
+        {
+          "id": "I49:974;3:103",
+          "text": "Por preparar"
+        },
+        {
+          "id": "I49:974;3:104",
+          "text": "12"
+        },
+        {
+          "id": "I49:974;3:105",
+          "text": "Pedidos en producción"
+        },
+        {
+          "id": "I49:979;3:103",
+          "text": "Por enviar"
+        },
+        {
+          "id": "I49:979;3:104",
+          "text": "04"
+        },
+        {
+          "id": "I49:979;3:105",
+          "text": "Empaque listo para despacho"
+        },
+        {
+          "id": "I49:984;3:103",
+          "text": "Enviadas"
+        },
+        {
+          "id": "I49:984;3:104",
+          "text": "09"
+        },
+        {
+          "id": "I49:984;3:105",
+          "text": "En tránsito con guía"
+        },
+        {
+          "id": "I49:989;3:103",
+          "text": "Entregas atrasadas"
+        },
+        {
+          "id": "I49:989;3:104",
+          "text": "03"
+        },
+        {
+          "id": "I49:989;3:105",
+          "text": "Revisar fecha comprometida"
+        },
+        {
+          "id": "I49:995;3:103",
+          "text": "Facturación del mes"
+        },
+        {
+          "id": "I49:995;3:104",
+          "text": "$72,400"
+        },
+        {
+          "id": "I49:995;3:105",
+          "text": "Facturado · distinto de ventas"
+        },
+        {
+          "id": "I49:1000;3:103",
+          "text": "Nuevos clientes"
+        },
+        {
+          "id": "I49:1000;3:104",
+          "text": "08"
+        },
+        {
+          "id": "I49:1000;3:105",
+          "text": "Altas en este mes"
+        },
+        {
+          "id": "I49:1005;3:103",
+          "text": "Prospectos nuevos"
+        },
+        {
+          "id": "I49:1005;3:104",
+          "text": "24"
+        },
+        {
+          "id": "I49:1005;3:105",
+          "text": "Pendientes de calificar"
+        },
+        {
+          "id": "I49:1010;3:103",
+          "text": "Sin recompra >30 días"
+        },
+        {
+          "id": "I49:1010;3:104",
+          "text": "08"
+        },
+        {
+          "id": "I49:1010;3:105",
+          "text": "Priorizar seguimiento"
+        },
+        {
+          "id": "49:1016",
+          "text": "Entregadas: 18 · A tiempo: 15 de 18 (83%)"
+        },
+        {
+          "id": "49:1017",
+          "text": "Ventas autorizadas: $84,620 · 6 pedidos por autorizar"
+        },
+        {
+          "id": "49:1020",
+          "text": "Sara IA · Acciones prioritarias"
+        },
+        {
+          "id": "49:1021",
+          "text": "5 conversaciones necesitan una persona.\n3 cotizaciones esperan confirmación.\n8 clientes llevan más de 30 días sin comprar."
+        },
+        {
+          "id": "I49:1022;3:76",
+          "text": "Abrir atención"
+        },
+        {
+          "id": "49:1026",
+          "text": "Agenda y actividad comercial"
+        },
+        {
+          "id": "49:1027",
+          "text": "10:30 · Hotel Alameda · Eli\n12:00 · Casa Norte · Vendedor 2\nConsulta disponibilidad antes de confirmar una cita."
+        },
+        {
+          "id": "I49:1028;3:76",
+          "text": "Ver agenda"
+        },
+        {
+          "id": "I49:1032;3:74",
+          "text": "Autorizar pedidos"
+        },
+        {
+          "id": "I49:1035;3:76",
+          "text": "Revisar atrasos"
+        },
+        {
+          "id": "I49:1038;3:76",
+          "text": "Ver reportes"
+        },
+        {
+          "id": "I49:1041;3:76",
+          "text": "Pipeline comercial"
+        }
+      ]
+    },
+    {
+      "id": "3:109",
+      "name": "02 · Atención omnicanal e IA",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I5:3349;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I5:3352;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I5:3354;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "5:3358",
+          "text": "Atención omnicanal"
+        },
+        {
+          "id": "5:3359",
+          "text": "Sara asesora y busca cerrar la venta; transfiere al equipo cuando hace falta."
+        },
+        {
+          "id": "I5:3361;3:74",
+          "text": "Todas 24"
+        },
+        {
+          "id": "I5:3363;3:76",
+          "text": "Sara IA 16"
+        },
+        {
+          "id": "I5:3365;3:76",
+          "text": "Requieren atención 5"
+        },
+        {
+          "id": "I5:3367;3:76",
+          "text": "Mis conversaciones 3"
+        },
+        {
+          "id": "5:3371",
+          "text": "Conversaciones"
+        },
+        {
+          "id": "I5:3372;3:101",
+          "text": "Buscar conversación…"
+        },
+        {
+          "id": "5:3375",
+          "text": "María · Hotel Alameda"
+        },
+        {
+          "id": "5:3376",
+          "text": "WhatsApp · Comprobante recibido\nHace 2 min"
+        },
+        {
+          "id": "I5:3377;3:92",
+          "text": "Por autorizar"
+        },
+        {
+          "id": "5:3380",
+          "text": "Carlos · Casa Norte"
+        },
+        {
+          "id": "5:3381",
+          "text": "Instagram · Quiere una llamada\nHace 8 min"
+        },
+        {
+          "id": "I5:3382;3:90",
+          "text": "Atiende Sara IA"
+        },
+        {
+          "id": "5:3385",
+          "text": "Hotel Mirador"
+        },
+        {
+          "id": "5:3386",
+          "text": "Facebook · Consulta de envío\nHace 12 min"
+        },
+        {
+          "id": "I5:3387;3:94",
+          "text": "Atiende Eli"
+        },
+        {
+          "id": "5:3390",
+          "text": "Lucía · Hotel del Valle"
+        },
+        {
+          "id": "5:3391",
+          "text": "Web · Solicitud de cotización"
+        },
+        {
+          "id": "I5:3392;3:90",
+          "text": "Nueva"
+        },
+        {
+          "id": "5:3395",
+          "text": "María López · Hotel Alameda"
+        },
+        {
+          "id": "I5:3397;3:94",
+          "text": "WhatsApp"
+        },
+        {
+          "id": "I5:3399;3:90",
+          "text": "Atiende Sara IA"
+        },
+        {
+          "id": "I5:3401;3:76",
+          "text": "Tomar atención"
+        },
+        {
+          "id": "5:3403",
+          "text": "HOY · 09:42"
+        },
+        {
+          "id": "5:3405",
+          "text": "María López"
+        },
+        {
+          "id": "5:3406",
+          "text": "Necesito 20 litros de limpiador y 4 litros de aromatizante para nuestro hotel."
+        },
+        {
+          "id": "5:3408",
+          "text": "Sara IA"
+        },
+        {
+          "id": "5:3409",
+          "text": "Soy Sara IA. Preparé tu pedido HE-1048 por $4,800 con los productos y aromas que confirmaste. No necesitas solicitar muestra."
+        },
+        {
+          "id": "I5:3410;3:90",
+          "text": "Registrado en CRM"
+        },
+        {
+          "id": "5:3413",
+          "text": "María López · 09:47"
+        },
+        {
+          "id": "5:3414",
+          "text": "Adjunto el comprobante de mi transferencia.\n📎 comprobante-1048.jpg"
+        },
+        {
+          "id": "5:3416",
+          "text": "Comprobante recibido"
+        },
+        {
+          "id": "5:3417",
+          "text": "Ya lo vinculamos a tu pedido. Un administrador lo revisará antes de iniciar la elaboración."
+        },
+        {
+          "id": "I5:3419;3:101",
+          "text": "Escribir respuesta…"
+        },
+        {
+          "id": "I5:3421;3:74",
+          "text": "Enviar"
+        },
+        {
+          "id": "5:3424",
+          "text": "Contexto del cliente"
+        },
+        {
+          "id": "5:3425",
+          "text": "Hotel Alameda"
+        },
+        {
+          "id": "5:3426",
+          "text": "María López · Compras\nMonterrey, Nuevo León"
+        },
+        {
+          "id": "I5:3427;3:90",
+          "text": "Responsable: Eli"
+        },
+        {
+          "id": "5:3430",
+          "text": "Origen: Meta Ads"
+        },
+        {
+          "id": "5:3431",
+          "text": "Campaña ELAH · Primer contacto: Instagram\nCompra: WhatsApp"
+        },
+        {
+          "id": "5:3433",
+          "text": "Pedido HE-1048 · $4,800"
+        },
+        {
+          "id": "5:3434",
+          "text": "Pendiente de autorización administrativa"
+        },
+        {
+          "id": "I5:3435;3:92",
+          "text": "Abrir pedido"
+        },
+        {
+          "id": "I5:3437;3:76",
+          "text": "Ver expediente"
+        },
+        {
+          "id": "I5:3439;3:76",
+          "text": "Agendar llamada"
+        },
+        {
+          "id": "I5:3441;3:76",
+          "text": "Historial de Sara IA"
+        }
+      ]
+    },
+    {
+      "id": "3:110",
+      "name": "03 · Clientes y hoteles",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I5:3559;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I5:3562;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I5:3564;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "5:3568",
+          "text": "Clientes y hoteles"
+        },
+        {
+          "id": "5:3569",
+          "text": "Una cartera conectada, desde el primer contacto hasta la recompra."
+        },
+        {
+          "id": "I5:3570;3:74",
+          "text": "Nuevo cliente"
+        },
+        {
+          "id": "I5:3573;3:74",
+          "text": "Todos 128"
+        },
+        {
+          "id": "I5:3575;3:76",
+          "text": "Prospectos 42"
+        },
+        {
+          "id": "I5:3577;3:76",
+          "text": "Clientes 86"
+        },
+        {
+          "id": "I5:3579;3:76",
+          "text": "Sin responsable 3"
+        },
+        {
+          "id": "I5:3582;3:101",
+          "text": "Buscar hotel, contacto o teléfono…"
+        },
+        {
+          "id": "I5:3584;3:101",
+          "text": "Responsable: todos"
+        },
+        {
+          "id": "I5:3586;3:101",
+          "text": "Origen: todos"
+        },
+        {
+          "id": "5:3589",
+          "text": "Cartera comercial"
+        },
+        {
+          "id": "5:3593",
+          "text": "Hotel / empresa"
+        },
+        {
+          "id": "5:3595",
+          "text": "Contacto"
+        },
+        {
+          "id": "5:3597",
+          "text": "Origen"
+        },
+        {
+          "id": "5:3599",
+          "text": "Responsable"
+        },
+        {
+          "id": "5:3601",
+          "text": "Última actividad"
+        },
+        {
+          "id": "5:3604",
+          "text": "Hotel Alameda"
+        },
+        {
+          "id": "5:3606",
+          "text": "María López"
+        },
+        {
+          "id": "5:3607",
+          "text": "Compras"
+        },
+        {
+          "id": "5:3609",
+          "text": "Meta Ads · Instagram"
+        },
+        {
+          "id": "5:3611",
+          "text": "Eli"
+        },
+        {
+          "id": "5:3613",
+          "text": "Comprobante recibido · hace 2 min"
+        },
+        {
+          "id": "5:3617",
+          "text": "Casa Norte"
+        },
+        {
+          "id": "5:3619",
+          "text": "Carlos Díaz"
+        },
+        {
+          "id": "5:3620",
+          "text": "Gerencia"
+        },
+        {
+          "id": "5:3622",
+          "text": "Instagram orgánico"
+        },
+        {
+          "id": "5:3624",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "5:3626",
+          "text": "Llamada pendiente · hoy"
+        },
+        {
+          "id": "5:3630",
+          "text": "Hotel Mirador"
+        },
+        {
+          "id": "5:3632",
+          "text": "Andrea Gómez"
+        },
+        {
+          "id": "5:3633",
+          "text": "Operaciones"
+        },
+        {
+          "id": "5:3635",
+          "text": "Página web"
+        },
+        {
+          "id": "5:3637",
+          "text": "Eli"
+        },
+        {
+          "id": "5:3639",
+          "text": "Pedido listo para despacho"
+        },
+        {
+          "id": "5:3643",
+          "text": "Hotel del Valle"
+        },
+        {
+          "id": "5:3645",
+          "text": "Lucía Ramos"
+        },
+        {
+          "id": "5:3646",
+          "text": "Compras"
+        },
+        {
+          "id": "5:3648",
+          "text": "Facebook"
+        },
+        {
+          "id": "5:3650",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "5:3652",
+          "text": "Cotización enviada · ayer"
+        },
+        {
+          "id": "5:3656",
+          "text": "Suites del Parque"
+        },
+        {
+          "id": "5:3658",
+          "text": "Jorge Torres"
+        },
+        {
+          "id": "5:3659",
+          "text": "Housekeeping"
+        },
+        {
+          "id": "5:3661",
+          "text": "TikTok Shop"
+        },
+        {
+          "id": "5:3663",
+          "text": "Eli"
+        },
+        {
+          "id": "5:3665",
+          "text": "Pedido recibido · ayer"
+        },
+        {
+          "id": "5:3669",
+          "text": "Grupo Horizonte"
+        },
+        {
+          "id": "5:3671",
+          "text": "Sofía García"
+        },
+        {
+          "id": "5:3672",
+          "text": "Compras corporativas"
+        },
+        {
+          "id": "5:3674",
+          "text": "Referido"
+        },
+        {
+          "id": "5:3676",
+          "text": "Eli"
+        },
+        {
+          "id": "5:3678",
+          "text": "Muestra entregada · 2 oct."
+        },
+        {
+          "id": "5:3680",
+          "text": "Mostrando 6 de 128 · Página 1 de 22"
+        },
+        {
+          "id": "5:3682",
+          "text": "Una identidad, varios canales"
+        },
+        {
+          "id": "5:3683",
+          "text": "Los perfiles se vinculan por datos verificados. Las posibles coincidencias requieren revisión antes de fusionar."
+        }
+      ]
+    },
+    {
+      "id": "3:111",
+      "name": "04 · Expediente del cliente",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I5:3800;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I5:3803;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I5:3805;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "49:1045",
+          "text": "Hotel Alameda"
+        },
+        {
+          "id": "49:1046",
+          "text": "Expediente único · Responsable humano: Eli · Atención comercial: Sara IA"
+        },
+        {
+          "id": "49:1049",
+          "text": "Datos fiscales y de envío"
+        },
+        {
+          "id": "49:1050",
+          "text": "Nombre comercial: Hotel Alameda\nRazón social: pendiente de captura\nRFC: pendiente de captura\nDirección de envío: Av. Ejemplo 120, Monterrey"
+        },
+        {
+          "id": "I49:1051;3:76",
+          "text": "Editar datos"
+        },
+        {
+          "id": "49:1055",
+          "text": "Contacto principal"
+        },
+        {
+          "id": "49:1056",
+          "text": "María López · Compras\nCelular / WhatsApp: pendiente de captura\nCorreo: pendiente de captura\nVerificar datos antes de enviar la cotización."
+        },
+        {
+          "id": "I49:1057;3:76",
+          "text": "Abrir conversación"
+        },
+        {
+          "id": "I49:1061;3:103",
+          "text": "Última compra"
+        },
+        {
+          "id": "I49:1061;3:104",
+          "text": "18 sep."
+        },
+        {
+          "id": "I49:1061;3:105",
+          "text": "Frecuencia estimada: 30 días"
+        },
+        {
+          "id": "I49:1066;3:103",
+          "text": "Pedidos"
+        },
+        {
+          "id": "I49:1066;3:104",
+          "text": "08"
+        },
+        {
+          "id": "I49:1066;3:105",
+          "text": "1 pendiente de autorización"
+        },
+        {
+          "id": "I49:1071;3:103",
+          "text": "Ventas autorizadas"
+        },
+        {
+          "id": "I49:1071;3:104",
+          "text": "$24,600"
+        },
+        {
+          "id": "I49:1071;3:105",
+          "text": "Últimos 12 meses"
+        },
+        {
+          "id": "I49:1076;3:103",
+          "text": "Ruta actual"
+        },
+        {
+          "id": "I49:1076;3:104",
+          "text": "Directa"
+        },
+        {
+          "id": "I49:1076;3:105",
+          "text": "Asesoría y cierre con Sara IA"
+        },
+        {
+          "id": "49:1083",
+          "text": "Productos y aromas"
+        },
+        {
+          "id": "49:1084",
+          "text": "Interés: limpieza + aromatización ELAH\nAroma elegido: por confirmar del catálogo\nConsumo estimado: pendiente de validar\nMuestra: opcional, no solicitada"
+        },
+        {
+          "id": "I49:1085;3:76",
+          "text": "Consultar catálogo"
+        },
+        {
+          "id": "49:1089",
+          "text": "Historial y próxima acción"
+        },
+        {
+          "id": "49:1090",
+          "text": "09:42 · Sara resuelve dudas y prepara propuesta.\n09:44 · Cliente confirma pedido HE-1048.\n09:47 · Comprobante recibido.\nPróxima acción: revisión administrativa."
+        },
+        {
+          "id": "I49:1091;3:76",
+          "text": "Revisar pedido"
+        }
+      ]
+    },
+    {
+      "id": "3:112",
+      "name": "05 · Oportunidades",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I5:3993;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I5:3996;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I5:3998;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "49:885",
+          "text": "Ventas con Sara IA"
+        },
+        {
+          "id": "49:886",
+          "text": "Venta directa como primera opción · Cada oportunidad conserva responsable, ruta y próxima acción."
+        },
+        {
+          "id": "I49:888;3:74",
+          "text": "Venta directa"
+        },
+        {
+          "id": "I49:890;3:76",
+          "text": "Muestras opcionales"
+        },
+        {
+          "id": "I49:893;3:76",
+          "text": "Cotizaciones"
+        },
+        {
+          "id": "I49:896;3:76",
+          "text": "Nueva oportunidad"
+        },
+        {
+          "id": "49:901",
+          "text": "1 · Nuevo prospecto"
+        },
+        {
+          "id": "49:902",
+          "text": "Sara identifica necesidades"
+        },
+        {
+          "id": "49:904",
+          "text": "Hotel del Valle"
+        },
+        {
+          "id": "49:905",
+          "text": "WhatsApp · Solicita precios\nPróxima acción: explicar ELAH"
+        },
+        {
+          "id": "I49:906;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:910",
+          "text": "Suites del Parque"
+        },
+        {
+          "id": "49:911",
+          "text": "Instagram · Consulta aromas\nPróxima acción: conocer espacios"
+        },
+        {
+          "id": "I49:912;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:916",
+          "text": "2 · Asesoría con Sara"
+        },
+        {
+          "id": "49:917",
+          "text": "Productos, aromas y cobertura"
+        },
+        {
+          "id": "49:919",
+          "text": "Hotel Brisa"
+        },
+        {
+          "id": "49:920",
+          "text": "Venta directa · Sin muestra\nPróxima acción: elegir aroma"
+        },
+        {
+          "id": "I49:921;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:925",
+          "text": "Grupo Horizonte"
+        },
+        {
+          "id": "49:926",
+          "text": "Muestra solicitada por cliente\nPróxima acción: evaluar resultado"
+        },
+        {
+          "id": "I49:927;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:931",
+          "text": "3 · Cotización"
+        },
+        {
+          "id": "49:932",
+          "text": "Precios y condiciones aprobados"
+        },
+        {
+          "id": "49:934",
+          "text": "Casa Norte"
+        },
+        {
+          "id": "49:935",
+          "text": "Venta directa · $3,200\nPróxima acción: confirmar cantidades"
+        },
+        {
+          "id": "I49:936;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:940",
+          "text": "Hotel Mirador"
+        },
+        {
+          "id": "49:941",
+          "text": "Con muestra · $6,450\nPróxima acción: resolver una duda"
+        },
+        {
+          "id": "I49:942;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:946",
+          "text": "4 · Confirmación"
+        },
+        {
+          "id": "49:947",
+          "text": "Aceptar propuesta y crear pedido"
+        },
+        {
+          "id": "49:949",
+          "text": "Hotel Alameda"
+        },
+        {
+          "id": "49:950",
+          "text": "Sara IA · $4,800\nCliente confirmó por WhatsApp"
+        },
+        {
+          "id": "I49:951;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:955",
+          "text": "Hotel Sierra"
+        },
+        {
+          "id": "49:956",
+          "text": "Requiere atención humana\nDescuento fuera de política"
+        },
+        {
+          "id": "I49:957;3:76",
+          "text": "Abrir oportunidad"
+        },
+        {
+          "id": "49:962",
+          "text": "Muestra solo cuando ayude a decidir"
+        },
+        {
+          "id": "49:963",
+          "text": "Solicitud → Envío → Evaluación → Cotización. Si el cliente decide comprar antes, continúa directo al pedido."
+        },
+        {
+          "id": "I49:964;3:76",
+          "text": "Ver muestras"
+        },
+        {
+          "id": "49:968",
+          "text": "Después del cierre"
+        },
+        {
+          "id": "49:969",
+          "text": "Pedido confirmado → Revisión administrativa → Producción → Envío → Entrega → Postventa y recompra"
+        }
+      ]
+    },
+    {
+      "id": "3:113",
+      "name": "06 · Agenda comercial",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I5:4195;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I5:4198;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I5:4200;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "5:4204",
+          "text": "Agenda del equipo"
+        },
+        {
+          "id": "5:4205",
+          "text": "5–9 de octubre de 2026 · America/Monterrey"
+        },
+        {
+          "id": "I5:4206;3:74",
+          "text": "Agendar llamada"
+        },
+        {
+          "id": "I5:4209;3:76",
+          "text": "‹ Semana anterior"
+        },
+        {
+          "id": "I5:4211;3:76",
+          "text": "Hoy"
+        },
+        {
+          "id": "I5:4213;3:101",
+          "text": "Todos los vendedores"
+        },
+        {
+          "id": "I5:4215;3:76",
+          "text": "Disponibilidad"
+        },
+        {
+          "id": "I5:4217;3:94",
+          "text": "Google Calendar"
+        },
+        {
+          "id": "5:4221",
+          "text": "LUN 05"
+        },
+        {
+          "id": "5:4222",
+          "text": "09:00 – 17:00"
+        },
+        {
+          "id": "5:4224",
+          "text": "10:30 · Hotel Alameda"
+        },
+        {
+          "id": "5:4225",
+          "text": "Eli · Google Meet\n30 minutos"
+        },
+        {
+          "id": "I5:4226;3:90",
+          "text": "Ver cita"
+        },
+        {
+          "id": "5:4229",
+          "text": "12:00 · Casa Norte"
+        },
+        {
+          "id": "5:4230",
+          "text": "Vendedor 2 · Telefónica"
+        },
+        {
+          "id": "5:4231",
+          "text": "Bloqueos de Calendar\nse respetan automáticamente"
+        },
+        {
+          "id": "5:4233",
+          "text": "MAR 06"
+        },
+        {
+          "id": "5:4234",
+          "text": "09:00 – 17:00"
+        },
+        {
+          "id": "5:4236",
+          "text": "09:30 · Hotel Sierra"
+        },
+        {
+          "id": "5:4237",
+          "text": "Eli · Telefónica"
+        },
+        {
+          "id": "5:4239",
+          "text": "15:00 · Grupo Horizonte"
+        },
+        {
+          "id": "5:4240",
+          "text": "Vendedor 2 · Google Meet"
+        },
+        {
+          "id": "5:4241",
+          "text": "Bloqueos de Calendar\nse respetan automáticamente"
+        },
+        {
+          "id": "5:4243",
+          "text": "MIÉ 07"
+        },
+        {
+          "id": "5:4244",
+          "text": "09:00 – 17:00"
+        },
+        {
+          "id": "5:4246",
+          "text": "11:00 · Hotel del Valle"
+        },
+        {
+          "id": "5:4247",
+          "text": "Eli · Google Meet"
+        },
+        {
+          "id": "5:4248",
+          "text": "Bloqueos de Calendar\nse respetan automáticamente"
+        },
+        {
+          "id": "5:4250",
+          "text": "JUE 08"
+        },
+        {
+          "id": "5:4251",
+          "text": "09:00 – 17:00"
+        },
+        {
+          "id": "5:4253",
+          "text": "Disponible"
+        },
+        {
+          "id": "5:4254",
+          "text": "El bot puede ofrecer estos espacios."
+        },
+        {
+          "id": "5:4255",
+          "text": "Bloqueos de Calendar\nse respetan automáticamente"
+        },
+        {
+          "id": "5:4257",
+          "text": "VIE 09"
+        },
+        {
+          "id": "5:4258",
+          "text": "09:00 – 17:00"
+        },
+        {
+          "id": "5:4260",
+          "text": "Disponible"
+        },
+        {
+          "id": "5:4261",
+          "text": "El bot puede ofrecer estos espacios."
+        },
+        {
+          "id": "5:4262",
+          "text": "Bloqueos de Calendar\nse respetan automáticamente"
+        },
+        {
+          "id": "5:4264",
+          "text": "Reserva confirmada una sola vez"
+        },
+        {
+          "id": "5:4265",
+          "text": "Se verifica el espacio antes de confirmar. Si alguien lo toma, el bot ofrece otra hora. Cancelar o reagendar actualiza la misma cita."
+        }
+      ]
+    },
+    {
+      "id": "3:114",
+      "name": "07 · Disponibilidad",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I5:4335;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I5:4338;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I5:4340;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "5:4344",
+          "text": "Disponibilidad de Eli"
+        },
+        {
+          "id": "5:4345",
+          "text": "El bot agenda únicamente dentro de tus espacios libres."
+        },
+        {
+          "id": "I5:4346;3:74",
+          "text": "Guardar cambios"
+        },
+        {
+          "id": "5:4350",
+          "text": "Horario semanal"
+        },
+        {
+          "id": "5:4354",
+          "text": "Día"
+        },
+        {
+          "id": "5:4356",
+          "text": "Inicio"
+        },
+        {
+          "id": "5:4358",
+          "text": "Fin"
+        },
+        {
+          "id": "5:4360",
+          "text": "Estado"
+        },
+        {
+          "id": "5:4363",
+          "text": "Lunes"
+        },
+        {
+          "id": "5:4365",
+          "text": "09:00"
+        },
+        {
+          "id": "5:4367",
+          "text": "17:00"
+        },
+        {
+          "id": "I5:4369;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "5:4374",
+          "text": "Martes"
+        },
+        {
+          "id": "5:4376",
+          "text": "09:00"
+        },
+        {
+          "id": "5:4378",
+          "text": "17:00"
+        },
+        {
+          "id": "I5:4380;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "5:4385",
+          "text": "Miércoles"
+        },
+        {
+          "id": "5:4387",
+          "text": "09:00"
+        },
+        {
+          "id": "5:4389",
+          "text": "17:00"
+        },
+        {
+          "id": "I5:4391;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "5:4396",
+          "text": "Jueves"
+        },
+        {
+          "id": "5:4398",
+          "text": "09:00"
+        },
+        {
+          "id": "5:4400",
+          "text": "17:00"
+        },
+        {
+          "id": "I5:4402;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "5:4407",
+          "text": "Viernes"
+        },
+        {
+          "id": "5:4409",
+          "text": "09:00"
+        },
+        {
+          "id": "5:4411",
+          "text": "17:00"
+        },
+        {
+          "id": "I5:4413;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "5:4418",
+          "text": "Sábado / domingo"
+        },
+        {
+          "id": "5:4420",
+          "text": "—"
+        },
+        {
+          "id": "5:4422",
+          "text": "—"
+        },
+        {
+          "id": "I5:4424;3:98",
+          "text": "No disponible"
+        },
+        {
+          "id": "5:4428",
+          "text": "Reglas de agenda"
+        },
+        {
+          "id": "5:4430",
+          "text": "Zona horaria"
+        },
+        {
+          "id": "I5:4431;3:101",
+          "text": "America/Monterrey"
+        },
+        {
+          "id": "5:4434",
+          "text": "Duración de cita"
+        },
+        {
+          "id": "I5:4435;3:101",
+          "text": "30 minutos · configurable"
+        },
+        {
+          "id": "5:4438",
+          "text": "Tiempo entre citas"
+        },
+        {
+          "id": "I5:4439;3:101",
+          "text": "10 minutos · configurable"
+        },
+        {
+          "id": "5:4442",
+          "text": "Modalidades"
+        },
+        {
+          "id": "I5:4443;3:101",
+          "text": "Telefónica y Google Meet"
+        },
+        {
+          "id": "5:4446",
+          "text": "Calendario"
+        },
+        {
+          "id": "I5:4447;3:101",
+          "text": "Eli · Google Workspace"
+        },
+        {
+          "id": "5:4450",
+          "text": "Ausencias y bloqueos"
+        },
+        {
+          "id": "5:4451",
+          "text": "Añade vacaciones o bloqueos puntuales. Si ningún vendedor está disponible, el bot ofrece el siguiente horario libre."
+        }
+      ]
+    },
+    {
+      "id": "3:115",
+      "name": "08 · Cotizaciones",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I7:356;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I7:359;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I7:361;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "7:365",
+          "text": "Cotizaciones"
+        },
+        {
+          "id": "7:366",
+          "text": "Propuestas comerciales con versiones y seguimiento."
+        },
+        {
+          "id": "I7:367;3:74",
+          "text": "Nueva cotización"
+        },
+        {
+          "id": "I7:370;3:74",
+          "text": "Todas"
+        },
+        {
+          "id": "I7:372;3:76",
+          "text": "Borradores"
+        },
+        {
+          "id": "I7:374;3:76",
+          "text": "Enviadas"
+        },
+        {
+          "id": "I7:376;3:76",
+          "text": "Aceptadas"
+        },
+        {
+          "id": "I7:378;3:76",
+          "text": "Vencidas"
+        },
+        {
+          "id": "7:381",
+          "text": "Propuestas recientes"
+        },
+        {
+          "id": "7:385",
+          "text": "Folio / cliente"
+        },
+        {
+          "id": "7:387",
+          "text": "Versión"
+        },
+        {
+          "id": "7:389",
+          "text": "Importe"
+        },
+        {
+          "id": "7:391",
+          "text": "Vigencia"
+        },
+        {
+          "id": "7:393",
+          "text": "Estado"
+        },
+        {
+          "id": "7:395",
+          "text": ""
+        },
+        {
+          "id": "7:398",
+          "text": "COT-0284 · Hotel Alameda"
+        },
+        {
+          "id": "7:400",
+          "text": "v2"
+        },
+        {
+          "id": "7:402",
+          "text": "$4,800"
+        },
+        {
+          "id": "7:404",
+          "text": "12 oct. 2026"
+        },
+        {
+          "id": "I7:406;3:94",
+          "text": "Aceptada"
+        },
+        {
+          "id": "7:409",
+          "text": "Ver pedido →"
+        },
+        {
+          "id": "7:413",
+          "text": "COT-0283 · Casa Norte"
+        },
+        {
+          "id": "7:415",
+          "text": "v1"
+        },
+        {
+          "id": "7:417",
+          "text": "$3,200"
+        },
+        {
+          "id": "7:419",
+          "text": "10 oct. 2026"
+        },
+        {
+          "id": "I7:421;3:90",
+          "text": "Enviada"
+        },
+        {
+          "id": "7:424",
+          "text": "Dar seguimiento →"
+        },
+        {
+          "id": "7:428",
+          "text": "COT-0282 · Hotel del Valle"
+        },
+        {
+          "id": "7:430",
+          "text": "v1"
+        },
+        {
+          "id": "7:432",
+          "text": "$4,200"
+        },
+        {
+          "id": "7:434",
+          "text": "09 oct. 2026"
+        },
+        {
+          "id": "I7:436;3:98",
+          "text": "Borrador"
+        },
+        {
+          "id": "7:439",
+          "text": "Editar →"
+        },
+        {
+          "id": "7:443",
+          "text": "COT-0281 · Grupo Horizonte"
+        },
+        {
+          "id": "7:445",
+          "text": "v3"
+        },
+        {
+          "id": "7:447",
+          "text": "$7,600"
+        },
+        {
+          "id": "7:449",
+          "text": "03 oct. 2026"
+        },
+        {
+          "id": "I7:451;3:92",
+          "text": "Vencida"
+        },
+        {
+          "id": "7:454",
+          "text": "Nueva versión →"
+        },
+        {
+          "id": "7:457",
+          "text": "La versión aceptada se conserva"
+        },
+        {
+          "id": "7:458",
+          "text": "Los cambios crean una nueva versión. Los precios y las cantidades se copian al pedido sin recapturas."
+        }
+      ]
+    },
+    {
+      "id": "3:116",
+      "name": "09 · Crear cotización",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I7:575;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I7:578;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I7:580;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "50:903",
+          "text": "Crear cotización"
+        },
+        {
+          "id": "50:904",
+          "text": "Hotel Alameda · Venta directa con Sara IA · Precios de demostración"
+        },
+        {
+          "id": "50:907",
+          "text": "Productos y aromas"
+        },
+        {
+          "id": "50:908",
+          "text": "Producto                         Cantidad       Precio       Importe"
+        },
+        {
+          "id": "50:909",
+          "text": "Limpiador profesional · 5 L       4               $850         $3,400\nAromatizante · 1 L                       4               $350         $1,400"
+        },
+        {
+          "id": "50:910",
+          "text": "Aroma por producto"
+        },
+        {
+          "id": "50:911",
+          "text": "Seleccionar una opción del catálogo aprobado. No enviar sin confirmar aroma y presentación."
+        },
+        {
+          "id": "I50:912;3:76",
+          "text": "Consultar catálogo"
+        },
+        {
+          "id": "50:915",
+          "text": "Condiciones de pago: contado\nVigencia: 12 de octubre de 2026\nEnvío: pendiente de confirmar costo, cobertura y plazo\nCliente: nombre comercial, razón social, RFC y contacto"
+        },
+        {
+          "id": "50:917",
+          "text": "Total de productos"
+        },
+        {
+          "id": "50:918",
+          "text": "$4,800 MXN"
+        },
+        {
+          "id": "50:919",
+          "text": "Envío e impuestos: por confirmar\nDescuento: sin descuento"
+        },
+        {
+          "id": "50:920",
+          "text": "Política de descuentos"
+        },
+        {
+          "id": "50:921",
+          "text": "Dirección define límites. Ventas aplica los autorizados; Sara solo usa reglas explícitas. Una excepción requiere revisión humana."
+        },
+        {
+          "id": "I50:922;3:76",
+          "text": "Guardar borrador"
+        },
+        {
+          "id": "I50:925;3:74",
+          "text": "Revisar y enviar"
+        },
+        {
+          "id": "50:929",
+          "text": "WhatsApp o correo · Confirmación antes de crear pedido"
+        },
+        {
+          "id": "50:930",
+          "text": "Guardar versión y canal de envío. La aceptación del cliente permite crear el pedido; administración conserva la autorización para producción."
+        },
+        {
+          "id": "I50:932;3:76",
+          "text": "Ver conversación"
+        },
+        {
+          "id": "I50:935;3:76",
+          "text": "Pedido confirmado"
+        }
+      ]
+    },
+    {
+      "id": "3:117",
+      "name": "10 · Pedidos",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I7:781;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I7:784;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I7:786;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "7:790",
+          "text": "Pedidos"
+        },
+        {
+          "id": "7:791",
+          "text": "Todas las compras, sin duplicados y con trazabilidad."
+        },
+        {
+          "id": "I7:792;3:74",
+          "text": "Crear pedido"
+        },
+        {
+          "id": "I7:795;3:103",
+          "text": "Por autorizar"
+        },
+        {
+          "id": "I7:795;3:104",
+          "text": "06"
+        },
+        {
+          "id": "I7:795;3:105",
+          "text": "Esperan revisión de Admin 1 o 2"
+        },
+        {
+          "id": "I7:799;3:103",
+          "text": "En elaboración"
+        },
+        {
+          "id": "I7:799;3:104",
+          "text": "12"
+        },
+        {
+          "id": "I7:799;3:105",
+          "text": "Fabricación bajo pedido"
+        },
+        {
+          "id": "I7:803;3:103",
+          "text": "Listos para despacho"
+        },
+        {
+          "id": "I7:803;3:104",
+          "text": "04"
+        },
+        {
+          "id": "I7:803;3:105",
+          "text": "Responsable: Admin 1"
+        },
+        {
+          "id": "I7:807;3:103",
+          "text": "En tránsito"
+        },
+        {
+          "id": "I7:807;3:104",
+          "text": "09"
+        },
+        {
+          "id": "I7:807;3:105",
+          "text": "Seguimiento por paquetería"
+        },
+        {
+          "id": "I7:812;3:74",
+          "text": "Todos"
+        },
+        {
+          "id": "I7:814;3:76",
+          "text": "Por autorizar"
+        },
+        {
+          "id": "I7:816;3:76",
+          "text": "Producción"
+        },
+        {
+          "id": "I7:818;3:76",
+          "text": "Por despachar"
+        },
+        {
+          "id": "I7:820;3:76",
+          "text": "Enviados"
+        },
+        {
+          "id": "7:823",
+          "text": "Pedidos del periodo"
+        },
+        {
+          "id": "7:827",
+          "text": "Pedido / cliente"
+        },
+        {
+          "id": "7:829",
+          "text": "Compra"
+        },
+        {
+          "id": "7:831",
+          "text": "Importe"
+        },
+        {
+          "id": "7:833",
+          "text": "Estado"
+        },
+        {
+          "id": "7:835",
+          "text": "Responsable"
+        },
+        {
+          "id": "7:837",
+          "text": ""
+        },
+        {
+          "id": "7:840",
+          "text": "HE-1048 · Hotel Alameda"
+        },
+        {
+          "id": "7:842",
+          "text": "WhatsApp"
+        },
+        {
+          "id": "7:844",
+          "text": "$4,800"
+        },
+        {
+          "id": "I7:846;3:92",
+          "text": "Por autorizar"
+        },
+        {
+          "id": "7:849",
+          "text": "Eli"
+        },
+        {
+          "id": "7:851",
+          "text": "Revisar →"
+        },
+        {
+          "id": "7:855",
+          "text": "HE-1047 · Casa Norte"
+        },
+        {
+          "id": "7:857",
+          "text": "Página web"
+        },
+        {
+          "id": "7:859",
+          "text": "$3,200"
+        },
+        {
+          "id": "I7:861;3:90",
+          "text": "En elaboración"
+        },
+        {
+          "id": "7:864",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "7:866",
+          "text": "Ver avance →"
+        },
+        {
+          "id": "7:870",
+          "text": "HE-1046 · Hotel Mirador"
+        },
+        {
+          "id": "7:872",
+          "text": "WhatsApp"
+        },
+        {
+          "id": "7:874",
+          "text": "$6,450"
+        },
+        {
+          "id": "I7:876;3:94",
+          "text": "Listo para envío"
+        },
+        {
+          "id": "7:879",
+          "text": "Eli"
+        },
+        {
+          "id": "7:881",
+          "text": "Despachar →"
+        },
+        {
+          "id": "7:885",
+          "text": "HE-1045 · Suites del Parque"
+        },
+        {
+          "id": "7:887",
+          "text": "TikTok Shop"
+        },
+        {
+          "id": "7:889",
+          "text": "$2,400"
+        },
+        {
+          "id": "I7:891;3:90",
+          "text": "En tránsito"
+        },
+        {
+          "id": "7:894",
+          "text": "Eli"
+        },
+        {
+          "id": "7:896",
+          "text": "Seguimiento →"
+        },
+        {
+          "id": "7:900",
+          "text": "HE-1044 · Hotel del Valle"
+        },
+        {
+          "id": "7:902",
+          "text": "Instagram"
+        },
+        {
+          "id": "7:904",
+          "text": "$4,200"
+        },
+        {
+          "id": "I7:906;3:92",
+          "text": "Requiere aclaración"
+        },
+        {
+          "id": "7:909",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "7:911",
+          "text": "Ver detalle →"
+        }
+      ]
+    },
+    {
+      "id": "3:118",
+      "name": "11 · Autorizar pedido",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I7:1029;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I7:1032;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I7:1034;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "7:1038",
+          "text": "Autorizar pedido HE-1048"
+        },
+        {
+          "id": "7:1039",
+          "text": "Comprobante recibido · Acceso exclusivo de Admin 1 y Admin 2"
+        },
+        {
+          "id": "7:1042",
+          "text": "Compra y comprobante"
+        },
+        {
+          "id": "I7:1044;3:92",
+          "text": "Pendiente de revisión"
+        },
+        {
+          "id": "7:1046",
+          "text": "Recibido hoy · 09:47"
+        },
+        {
+          "id": "7:1047",
+          "text": "Hotel Alameda · María López"
+        },
+        {
+          "id": "7:1051",
+          "text": "Producto"
+        },
+        {
+          "id": "7:1053",
+          "text": "Cantidad"
+        },
+        {
+          "id": "7:1055",
+          "text": "Importe"
+        },
+        {
+          "id": "7:1058",
+          "text": "Limpiador profesional · 5 L"
+        },
+        {
+          "id": "7:1060",
+          "text": "4"
+        },
+        {
+          "id": "7:1062",
+          "text": "$3,400"
+        },
+        {
+          "id": "7:1066",
+          "text": "Aromatizante · 1 L"
+        },
+        {
+          "id": "7:1068",
+          "text": "4"
+        },
+        {
+          "id": "7:1070",
+          "text": "$1,400"
+        },
+        {
+          "id": "7:1073",
+          "text": "COMPROBANTE ADJUNTO"
+        },
+        {
+          "id": "7:1074",
+          "text": "comprobante-1048.jpg"
+        },
+        {
+          "id": "7:1075",
+          "text": "Archivo de demostración · recibido por WhatsApp\nVinculado al pedido HE-1048 · no es un comprobante bancario real"
+        },
+        {
+          "id": "I7:1076;3:76",
+          "text": "Ver archivo"
+        },
+        {
+          "id": "7:1078",
+          "text": "Origen: Meta Ads / Instagram  ·  Compra: WhatsApp\nAsesora: Eli  ·  Entrega: Monterrey por paquetería"
+        },
+        {
+          "id": "7:1080",
+          "text": "Revisión administrativa"
+        },
+        {
+          "id": "7:1081",
+          "text": "$4,800 MXN"
+        },
+        {
+          "id": "7:1082",
+          "text": "Total del pedido"
+        },
+        {
+          "id": "7:1084",
+          "text": "Antes de autorizar"
+        },
+        {
+          "id": "7:1085",
+          "text": "Comprueba que el abono corresponda al importe y al pedido. La IA no verifica una transferencia a partir de una imagen."
+        },
+        {
+          "id": "7:1087",
+          "text": "Resultado de la revisión"
+        },
+        {
+          "id": "I7:1088;3:101",
+          "text": "Abono confirmado por administrador"
+        },
+        {
+          "id": "7:1091",
+          "text": "Nota interna"
+        },
+        {
+          "id": "I7:1092;3:101",
+          "text": "Referencia revisada · sin observaciones"
+        },
+        {
+          "id": "I7:1094;3:74",
+          "text": "Autorizar y enviar a producción"
+        },
+        {
+          "id": "I7:1096;3:76",
+          "text": "Solicitar aclaración"
+        },
+        {
+          "id": "I7:1098;3:78",
+          "text": "Rechazar pedido"
+        },
+        {
+          "id": "7:1100",
+          "text": "La autorización registra quién aprobó y cuándo.\nSolo se genera una liberación inicial por pedido."
+        }
+      ]
+    },
+    {
+      "id": "3:119",
+      "name": "12 · Pedido autorizado",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I7:1217;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I7:1220;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I7:1222;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "7:1226",
+          "text": "Pedido autorizado"
+        },
+        {
+          "id": "7:1227",
+          "text": "HE-1048 · Autorizado por Admin 1 · Hoy, 09:55"
+        },
+        {
+          "id": "7:1229",
+          "text": "Autorización completada"
+        },
+        {
+          "id": "7:1230",
+          "text": "Se creó OP-0312, se reservaron materiales y se programó la confirmación del pedido para el cliente."
+        },
+        {
+          "id": "7:1233",
+          "text": "Trazabilidad del pedido"
+        },
+        {
+          "id": "7:1235",
+          "text": "01 · Comprobante recibido"
+        },
+        {
+          "id": "7:1236",
+          "text": "WhatsApp · 09:47 · Registrado una vez"
+        },
+        {
+          "id": "I7:1237;3:94",
+          "text": "Completado"
+        },
+        {
+          "id": "7:1240",
+          "text": "02 · Autorización administrativa"
+        },
+        {
+          "id": "7:1241",
+          "text": "Admin 1 · 09:55 · Abono revisado"
+        },
+        {
+          "id": "I7:1242;3:94",
+          "text": "Completado"
+        },
+        {
+          "id": "7:1245",
+          "text": "03 · Orden de producción OP-0312"
+        },
+        {
+          "id": "7:1246",
+          "text": "Asignada a Producción · Materiales reservados"
+        },
+        {
+          "id": "I7:1247;3:90",
+          "text": "Pendiente de elaborar"
+        },
+        {
+          "id": "7:1250",
+          "text": "04 · Confirmación al cliente"
+        },
+        {
+          "id": "7:1251",
+          "text": "Folio y resumen enviados por WhatsApp · sin documento fiscal"
+        },
+        {
+          "id": "I7:1252;3:94",
+          "text": "Enviado"
+        },
+        {
+          "id": "7:1255",
+          "text": "Siguiente paso"
+        },
+        {
+          "id": "7:1256",
+          "text": "Fabricar bajo pedido"
+        },
+        {
+          "id": "7:1257",
+          "text": "4 × Limpiador profesional 5 L\n4 × Aromatizante 1 L"
+        },
+        {
+          "id": "I7:1258;3:74",
+          "text": "Abrir orden de producción"
+        },
+        {
+          "id": "I7:1260;3:76",
+          "text": "Ver conversación"
+        },
+        {
+          "id": "7:1263",
+          "text": "Sin duplicados"
+        },
+        {
+          "id": "7:1264",
+          "text": "Otro clic o un reenvío del comprobante conserva HE-1048 y OP-0312. No vuelve a fabricar."
+        },
+        {
+          "id": "I7:1265;3:76",
+          "text": "Ver todos los pedidos"
+        }
+      ]
+    },
+    {
+      "id": "3:120",
+      "name": "13 · Producción",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I7:1383;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I7:1386;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I7:1388;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "7:1392",
+          "text": "Producción bajo pedido"
+        },
+        {
+          "id": "7:1393",
+          "text": "Solo pedidos autorizados · Elaboración, revisión y empaque"
+        },
+        {
+          "id": "7:1396",
+          "text": "Pendientes"
+        },
+        {
+          "id": "7:1397",
+          "text": "03 órdenes"
+        },
+        {
+          "id": "7:1399",
+          "text": "OP-0312 · HE-1048"
+        },
+        {
+          "id": "7:1400",
+          "text": "20 L limpiador + 4 L aroma\nMateriales reservados"
+        },
+        {
+          "id": "I7:1401;3:90",
+          "text": "Abrir orden"
+        },
+        {
+          "id": "7:1404",
+          "text": "OP-0309 · HE-1044"
+        },
+        {
+          "id": "7:1405",
+          "text": "10 L limpiador\nFalta envase 1 L"
+        },
+        {
+          "id": "I7:1406;3:92",
+          "text": "Bloqueado por insumos"
+        },
+        {
+          "id": "7:1409",
+          "text": "En elaboración"
+        },
+        {
+          "id": "7:1410",
+          "text": "04 órdenes"
+        },
+        {
+          "id": "7:1412",
+          "text": "OP-0310 · HE-1047"
+        },
+        {
+          "id": "7:1413",
+          "text": "15 L limpiador\nLote L-261005-01"
+        },
+        {
+          "id": "I7:1414;3:90",
+          "text": "Abrir orden"
+        },
+        {
+          "id": "7:1417",
+          "text": "OP-0307 · HE-1042"
+        },
+        {
+          "id": "7:1418",
+          "text": "8 L aromatizante\nElaboración iniciada"
+        },
+        {
+          "id": "I7:1419;3:90",
+          "text": "Abrir orden"
+        },
+        {
+          "id": "7:1422",
+          "text": "Revisión y empaque"
+        },
+        {
+          "id": "7:1423",
+          "text": "05 órdenes"
+        },
+        {
+          "id": "7:1425",
+          "text": "OP-0308 · HE-1046"
+        },
+        {
+          "id": "7:1426",
+          "text": "24 unidades\nVerificar sellado"
+        },
+        {
+          "id": "I7:1427;3:90",
+          "text": "Abrir orden"
+        },
+        {
+          "id": "7:1430",
+          "text": "OP-0306 · HE-1041"
+        },
+        {
+          "id": "7:1431",
+          "text": "12 unidades\nEmpaque en curso"
+        },
+        {
+          "id": "I7:1432;3:90",
+          "text": "Abrir orden"
+        },
+        {
+          "id": "7:1435",
+          "text": "Listos para despacho"
+        },
+        {
+          "id": "7:1436",
+          "text": "04 órdenes"
+        },
+        {
+          "id": "7:1438",
+          "text": "OP-0305 · HE-1040"
+        },
+        {
+          "id": "7:1439",
+          "text": "2 paquetes preparados\nPendiente de Admin 1"
+        },
+        {
+          "id": "I7:1440;3:90",
+          "text": "Abrir orden"
+        },
+        {
+          "id": "7:1443",
+          "text": "Capacidad y materiales antes de prometer"
+        },
+        {
+          "id": "7:1444",
+          "text": "Los pedidos sin insumos permanecen visibles y bloqueados. Una fecha estimada debe respetar la capacidad de producción."
+        }
+      ]
+    },
+    {
+      "id": "3:121",
+      "name": "14 · Orden de elaboración",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I7:1479;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I7:1482;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I7:1484;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "7:1488",
+          "text": "Orden OP-0312"
+        },
+        {
+          "id": "7:1489",
+          "text": "Pedido HE-1048 · Autorizado por Admin 1 · 5 oct., 09:55"
+        },
+        {
+          "id": "I7:1490;3:74",
+          "text": "Iniciar elaboración"
+        },
+        {
+          "id": "7:1494",
+          "text": "Elaboración y materiales"
+        },
+        {
+          "id": "I7:1495;3:90",
+          "text": "Pendiente de elaborar"
+        },
+        {
+          "id": "7:1497",
+          "text": "Limpiador profesional · 20 L\nAromatizante · 4 L"
+        },
+        {
+          "id": "7:1501",
+          "text": "Material"
+        },
+        {
+          "id": "7:1503",
+          "text": "Requerido"
+        },
+        {
+          "id": "7:1505",
+          "text": "Reservado"
+        },
+        {
+          "id": "7:1507",
+          "text": "Estado"
+        },
+        {
+          "id": "7:1510",
+          "text": "Base de limpieza"
+        },
+        {
+          "id": "7:1512",
+          "text": "Según fórmula"
+        },
+        {
+          "id": "7:1514",
+          "text": "Disponible"
+        },
+        {
+          "id": "I7:1516;3:94",
+          "text": "Reservado"
+        },
+        {
+          "id": "7:1521",
+          "text": "Base aromática"
+        },
+        {
+          "id": "7:1523",
+          "text": "Según fórmula"
+        },
+        {
+          "id": "7:1525",
+          "text": "Disponible"
+        },
+        {
+          "id": "I7:1527;3:94",
+          "text": "Reservado"
+        },
+        {
+          "id": "7:1532",
+          "text": "Envase 5 L + tapa"
+        },
+        {
+          "id": "7:1534",
+          "text": "4 pzas"
+        },
+        {
+          "id": "7:1536",
+          "text": "4 pzas"
+        },
+        {
+          "id": "I7:1538;3:94",
+          "text": "Reservado"
+        },
+        {
+          "id": "7:1543",
+          "text": "Envase 1 L + tapa"
+        },
+        {
+          "id": "7:1545",
+          "text": "4 pzas"
+        },
+        {
+          "id": "7:1547",
+          "text": "4 pzas"
+        },
+        {
+          "id": "I7:1549;3:94",
+          "text": "Reservado"
+        },
+        {
+          "id": "7:1554",
+          "text": "Etiquetas y caja"
+        },
+        {
+          "id": "7:1556",
+          "text": "8 + 1 pzas"
+        },
+        {
+          "id": "7:1558",
+          "text": "8 + 1 pzas"
+        },
+        {
+          "id": "I7:1560;3:94",
+          "text": "Reservado"
+        },
+        {
+          "id": "7:1563",
+          "text": "Fórmula y cantidades técnicas por documentar antes de implementación."
+        },
+        {
+          "id": "7:1565",
+          "text": "Registro de producción"
+        },
+        {
+          "id": "7:1567",
+          "text": "Lote"
+        },
+        {
+          "id": "I7:1568;3:101",
+          "text": "L-261005-02"
+        },
+        {
+          "id": "7:1571",
+          "text": "Cantidad obtenida"
+        },
+        {
+          "id": "I7:1572;3:101",
+          "text": "Registrar al terminar"
+        },
+        {
+          "id": "7:1575",
+          "text": "Consumo real / merma"
+        },
+        {
+          "id": "I7:1576;3:101",
+          "text": "Registrar movimientos de insumos"
+        },
+        {
+          "id": "7:1578",
+          "text": "LISTA DE VERIFICACIÓN"
+        },
+        {
+          "id": "7:1579",
+          "text": "☐ Elaboración terminada\n☐ Revisión de calidad\n☐ Envases sellados\n☐ Etiquetas correctas\n☐ Empaque completo"
+        },
+        {
+          "id": "I7:1580;3:76",
+          "text": "Guardar avance"
+        },
+        {
+          "id": "I7:1582;3:74",
+          "text": "Marcar listo para despacho"
+        },
+        {
+          "id": "7:1584",
+          "text": "Admin 1 registrará paquetería y guía."
+        }
+      ]
+    },
+    {
+      "id": "3:122",
+      "name": "15 · Inventario",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I8:559;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I8:562;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I8:564;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "8:568",
+          "text": "Inventario"
+        },
+        {
+          "id": "8:569",
+          "text": "Materia prima, envases y empaques para fabricar bajo pedido."
+        },
+        {
+          "id": "I8:570;3:74",
+          "text": "Registrar movimiento"
+        },
+        {
+          "id": "I8:573;3:103",
+          "text": "Insumos activos"
+        },
+        {
+          "id": "I8:573;3:104",
+          "text": "38"
+        },
+        {
+          "id": "I8:573;3:105",
+          "text": "Almacén principal"
+        },
+        {
+          "id": "I8:577;3:103",
+          "text": "Bajo mínimo"
+        },
+        {
+          "id": "I8:577;3:104",
+          "text": "02"
+        },
+        {
+          "id": "I8:577;3:105",
+          "text": "Requieren abastecimiento"
+        },
+        {
+          "id": "I8:581;3:103",
+          "text": "Reservas vigentes"
+        },
+        {
+          "id": "I8:581;3:104",
+          "text": "12"
+        },
+        {
+          "id": "I8:581;3:105",
+          "text": "Vinculadas a producción"
+        },
+        {
+          "id": "I8:585;3:103",
+          "text": "Movimientos hoy"
+        },
+        {
+          "id": "I8:585;3:104",
+          "text": "18"
+        },
+        {
+          "id": "I8:585;3:105",
+          "text": "Entradas, consumo y ajustes"
+        },
+        {
+          "id": "I8:590;3:74",
+          "text": "Materias primas"
+        },
+        {
+          "id": "I8:592;3:76",
+          "text": "Envases"
+        },
+        {
+          "id": "I8:594;3:76",
+          "text": "Etiquetas y empaque"
+        },
+        {
+          "id": "I8:596;3:76",
+          "text": "Movimientos"
+        },
+        {
+          "id": "8:599",
+          "text": "Existencias y reservas"
+        },
+        {
+          "id": "8:603",
+          "text": "Insumo"
+        },
+        {
+          "id": "8:605",
+          "text": "Unidad"
+        },
+        {
+          "id": "8:607",
+          "text": "Físico"
+        },
+        {
+          "id": "8:609",
+          "text": "Reservado"
+        },
+        {
+          "id": "8:611",
+          "text": "Disponible"
+        },
+        {
+          "id": "8:613",
+          "text": "Estado"
+        },
+        {
+          "id": "8:616",
+          "text": "Base de limpieza"
+        },
+        {
+          "id": "8:618",
+          "text": "L"
+        },
+        {
+          "id": "8:620",
+          "text": "240"
+        },
+        {
+          "id": "8:622",
+          "text": "80"
+        },
+        {
+          "id": "8:624",
+          "text": "160"
+        },
+        {
+          "id": "I8:626;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "8:631",
+          "text": "Base aromática"
+        },
+        {
+          "id": "8:633",
+          "text": "L"
+        },
+        {
+          "id": "8:635",
+          "text": "60"
+        },
+        {
+          "id": "8:637",
+          "text": "24"
+        },
+        {
+          "id": "8:639",
+          "text": "36"
+        },
+        {
+          "id": "I8:641;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "8:646",
+          "text": "Envase 5 L"
+        },
+        {
+          "id": "8:648",
+          "text": "Pza"
+        },
+        {
+          "id": "8:650",
+          "text": "120"
+        },
+        {
+          "id": "8:652",
+          "text": "40"
+        },
+        {
+          "id": "8:654",
+          "text": "80"
+        },
+        {
+          "id": "I8:656;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "8:661",
+          "text": "Envase 1 L"
+        },
+        {
+          "id": "8:663",
+          "text": "Pza"
+        },
+        {
+          "id": "8:665",
+          "text": "48"
+        },
+        {
+          "id": "8:667",
+          "text": "40"
+        },
+        {
+          "id": "8:669",
+          "text": "8"
+        },
+        {
+          "id": "I8:671;3:92",
+          "text": "Bajo mínimo"
+        },
+        {
+          "id": "8:676",
+          "text": "Etiqueta ELAH"
+        },
+        {
+          "id": "8:678",
+          "text": "Pza"
+        },
+        {
+          "id": "8:680",
+          "text": "60"
+        },
+        {
+          "id": "8:682",
+          "text": "48"
+        },
+        {
+          "id": "8:684",
+          "text": "12"
+        },
+        {
+          "id": "I8:686;3:92",
+          "text": "Bajo mínimo"
+        },
+        {
+          "id": "8:691",
+          "text": "Caja de envío"
+        },
+        {
+          "id": "8:693",
+          "text": "Pza"
+        },
+        {
+          "id": "8:695",
+          "text": "90"
+        },
+        {
+          "id": "8:697",
+          "text": "18"
+        },
+        {
+          "id": "8:699",
+          "text": "72"
+        },
+        {
+          "id": "I8:701;3:94",
+          "text": "Disponible"
+        },
+        {
+          "id": "8:705",
+          "text": "Cada cambio tiene un motivo"
+        },
+        {
+          "id": "8:706",
+          "text": "Reservar no es consumir. Al elaborar se registra el consumo real; ajustes y mermas conservan responsable, fecha y orden relacionada."
+        }
+      ]
+    },
+    {
+      "id": "3:123",
+      "name": "16 · Catálogo",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I8:823;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I8:826;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I8:828;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "50:861",
+          "text": "Catálogo y conocimiento de Sara"
+        },
+        {
+          "id": "50:862",
+          "text": "Información comercial aprobada para asesorar, recomendar aromas y preparar cotizaciones."
+        },
+        {
+          "id": "50:865",
+          "text": "Limpiador profesional"
+        },
+        {
+          "id": "50:866",
+          "text": "5 L · HE-LIM-05\n$850 MXN · Precio de demostración\nAroma: seleccionar del catálogo aprobado\nFicha técnica y aplicación: por cargar"
+        },
+        {
+          "id": "I50:867;3:76",
+          "text": "Cotizar"
+        },
+        {
+          "id": "50:871",
+          "text": "Aromatizante"
+        },
+        {
+          "id": "50:872",
+          "text": "1 L · HE-ARO-01\n$350 MXN · Precio de demostración\nAroma: seleccionar del catálogo aprobado\nIntensidad y uso: según ficha aprobada"
+        },
+        {
+          "id": "I50:873;3:76",
+          "text": "Cotizar"
+        },
+        {
+          "id": "50:877",
+          "text": "Sistema ELAH"
+        },
+        {
+          "id": "50:878",
+          "text": "Paquete limpieza + aroma\n$1,200 MXN · Precio de demostración\nSara explica la solución con material validado.\nNo publica promesas sin respaldo."
+        },
+        {
+          "id": "I50:879;3:76",
+          "text": "Ver asesoría"
+        },
+        {
+          "id": "50:884",
+          "text": "Aromas · Información pendiente"
+        },
+        {
+          "id": "50:885",
+          "text": "La ficha de cada aroma debe incluir nombre, familia, notas, intensidad, áreas recomendadas y presentaciones compatibles.\n\nEl documento no incluye el catálogo real. Sara solicitará la ficha aprobada antes de recomendar un aroma concreto."
+        },
+        {
+          "id": "I50:886;3:76",
+          "text": "Consultar con ventas"
+        },
+        {
+          "id": "50:890",
+          "text": "Preguntas frecuentes de Sara"
+        },
+        {
+          "id": "50:891",
+          "text": "¿Qué es el Sistema ELAH?\n¿Cuánto cuesta y qué incluye?\n¿Qué aromas hay disponibles?\n¿Envían a mi código postal?\n\nPrecios, cobertura y plazos se consultan antes de confirmar."
+        },
+        {
+          "id": "I50:892;3:76",
+          "text": "Abrir conversación"
+        },
+        {
+          "id": "I50:896;3:74",
+          "text": "Continuar venta directa"
+        },
+        {
+          "id": "I50:899;3:76",
+          "text": "Solicitar muestra opcional"
+        }
+      ]
+    },
+    {
+      "id": "3:124",
+      "name": "17 · Despachos",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I8:1004;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I8:1007;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I8:1009;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "8:1013",
+          "text": "Despachos y seguimiento"
+        },
+        {
+          "id": "8:1014",
+          "text": "Admin 1 registra la salida, la paquetería y la guía."
+        },
+        {
+          "id": "I8:1016;3:74",
+          "text": "Listos para despacho 4"
+        },
+        {
+          "id": "I8:1018;3:76",
+          "text": "En tránsito 9"
+        },
+        {
+          "id": "I8:1020;3:76",
+          "text": "Entregados"
+        },
+        {
+          "id": "I8:1022;3:76",
+          "text": "Incidencias"
+        },
+        {
+          "id": "8:1025",
+          "text": "Pedidos preparados"
+        },
+        {
+          "id": "8:1029",
+          "text": "Pedido / cliente"
+        },
+        {
+          "id": "8:1031",
+          "text": "Paquetes"
+        },
+        {
+          "id": "8:1033",
+          "text": "Destino"
+        },
+        {
+          "id": "8:1035",
+          "text": "Preparación"
+        },
+        {
+          "id": "8:1037",
+          "text": ""
+        },
+        {
+          "id": "8:1040",
+          "text": "HE-1046 · Hotel Mirador"
+        },
+        {
+          "id": "8:1042",
+          "text": "2"
+        },
+        {
+          "id": "8:1044",
+          "text": "Monterrey, N. L."
+        },
+        {
+          "id": "I8:1046;3:94",
+          "text": "Empaque completo"
+        },
+        {
+          "id": "8:1049",
+          "text": "Registrar envío →"
+        },
+        {
+          "id": "8:1053",
+          "text": "HE-1040 · Casa del Sol"
+        },
+        {
+          "id": "8:1055",
+          "text": "1"
+        },
+        {
+          "id": "8:1057",
+          "text": "Saltillo, Coah."
+        },
+        {
+          "id": "I8:1059;3:94",
+          "text": "Empaque completo"
+        },
+        {
+          "id": "8:1062",
+          "text": "Registrar envío →"
+        },
+        {
+          "id": "8:1066",
+          "text": "HE-1038 · Hotel Sierra"
+        },
+        {
+          "id": "8:1068",
+          "text": "3"
+        },
+        {
+          "id": "8:1070",
+          "text": "Guadalajara, Jal."
+        },
+        {
+          "id": "I8:1072;3:94",
+          "text": "Empaque completo"
+        },
+        {
+          "id": "8:1075",
+          "text": "Registrar envío →"
+        },
+        {
+          "id": "8:1079",
+          "text": "Seguimiento de paquetería"
+        },
+        {
+          "id": "8:1081",
+          "text": "HE-1045 · En tránsito"
+        },
+        {
+          "id": "8:1082",
+          "text": "Guía registrada · Último evento recibido hace 30 min"
+        },
+        {
+          "id": "I8:1083;3:90",
+          "text": "Consultar seguimiento"
+        },
+        {
+          "id": "8:1085",
+          "text": "Los estados automáticos dependen de la integración de la paquetería."
+        },
+        {
+          "id": "8:1087",
+          "text": "Incidencias de entrega"
+        },
+        {
+          "id": "8:1089",
+          "text": "HE-1035 · Dirección por confirmar"
+        },
+        {
+          "id": "8:1090",
+          "text": "Contactar al cliente antes de reprogramar."
+        },
+        {
+          "id": "I8:1091;3:92",
+          "text": "Requiere atención"
+        },
+        {
+          "id": "I8:1093;3:76",
+          "text": "Abrir postventa"
+        }
+      ]
+    },
+    {
+      "id": "3:125",
+      "name": "18 · Registrar despacho",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I8:1211;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I8:1214;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I8:1216;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "8:1220",
+          "text": "Registrar despacho"
+        },
+        {
+          "id": "8:1221",
+          "text": "HE-1046 · Hotel Mirador · Sesión: Admin 1"
+        },
+        {
+          "id": "8:1224",
+          "text": "Datos del envío"
+        },
+        {
+          "id": "8:1226",
+          "text": "Paquetería"
+        },
+        {
+          "id": "I8:1227;3:101",
+          "text": "Seleccionar proveedor de envío"
+        },
+        {
+          "id": "8:1231",
+          "text": "Número de guía"
+        },
+        {
+          "id": "I8:1232;3:101",
+          "text": "Capturar guía"
+        },
+        {
+          "id": "8:1235",
+          "text": "Cantidad de paquetes"
+        },
+        {
+          "id": "I8:1236;3:101",
+          "text": "2"
+        },
+        {
+          "id": "8:1239",
+          "text": "Enlace de rastreo"
+        },
+        {
+          "id": "I8:1240;3:101",
+          "text": "Pegar enlace de la paquetería"
+        },
+        {
+          "id": "8:1243",
+          "text": "Fecha y hora de salida"
+        },
+        {
+          "id": "I8:1244;3:101",
+          "text": "5 oct. 2026 · 14:00 · Monterrey"
+        },
+        {
+          "id": "8:1247",
+          "text": "Observaciones"
+        },
+        {
+          "id": "I8:1248;3:101",
+          "text": "Empaque revisado y sellado"
+        },
+        {
+          "id": "I8:1250;3:74",
+          "text": "Guardar despacho y notificar"
+        },
+        {
+          "id": "8:1253",
+          "text": "Mensaje al cliente"
+        },
+        {
+          "id": "I8:1254;3:94",
+          "text": "Vista previa · WhatsApp"
+        },
+        {
+          "id": "8:1256",
+          "text": "Tu pedido va en camino"
+        },
+        {
+          "id": "8:1257",
+          "text": "Hola, Andrea. Despachamos tu pedido HE-1046.\n\nPaquetería: [proveedor]\nGuía: [número]\nRastreo: [enlace]\n\nPuedes escribirnos aquí si necesitas ayuda."
+        },
+        {
+          "id": "8:1259",
+          "text": "Antes de enviar"
+        },
+        {
+          "id": "8:1260",
+          "text": "Se requiere una guía válida y un canal autorizado. Si falla la notificación, el despacho se conserva y el aviso queda pendiente."
+        },
+        {
+          "id": "8:1261",
+          "text": "El comprobante del pedido no es una factura."
+        }
+      ]
+    },
+    {
+      "id": "3:126",
+      "name": "19 · Postventa y recompra",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I8:1378;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I8:1381;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I8:1383;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "8:1387",
+          "text": "Postventa y recompra"
+        },
+        {
+          "id": "8:1388",
+          "text": "Acompaña cada entrega y prepara la siguiente compra."
+        },
+        {
+          "id": "I8:1389;3:74",
+          "text": "Crear seguimiento"
+        },
+        {
+          "id": "I8:1392;3:74",
+          "text": "Pendientes"
+        },
+        {
+          "id": "I8:1394;3:76",
+          "text": "Incidencias"
+        },
+        {
+          "id": "I8:1396;3:76",
+          "text": "Recompra"
+        },
+        {
+          "id": "I8:1398;3:76",
+          "text": "Resueltos"
+        },
+        {
+          "id": "8:1402",
+          "text": "Atención después de la venta"
+        },
+        {
+          "id": "8:1406",
+          "text": "Cliente / pedido"
+        },
+        {
+          "id": "8:1408",
+          "text": "Motivo"
+        },
+        {
+          "id": "8:1410",
+          "text": "Responsable"
+        },
+        {
+          "id": "8:1412",
+          "text": ""
+        },
+        {
+          "id": "8:1415",
+          "text": "Hotel Sierra · HE-1035"
+        },
+        {
+          "id": "8:1417",
+          "text": "Dirección de entrega"
+        },
+        {
+          "id": "8:1419",
+          "text": "Eli"
+        },
+        {
+          "id": "8:1421",
+          "text": "Atender →"
+        },
+        {
+          "id": "8:1425",
+          "text": "Casa Norte · HE-1032"
+        },
+        {
+          "id": "8:1427",
+          "text": "Confirmar recepción"
+        },
+        {
+          "id": "8:1429",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "8:1431",
+          "text": "Atender →"
+        },
+        {
+          "id": "8:1435",
+          "text": "Hotel Mirador · HE-1028"
+        },
+        {
+          "id": "8:1437",
+          "text": "Consulta de aplicación"
+        },
+        {
+          "id": "8:1439",
+          "text": "Eli"
+        },
+        {
+          "id": "8:1441",
+          "text": "Atender →"
+        },
+        {
+          "id": "8:1445",
+          "text": "Hotel Alameda · HE-1018"
+        },
+        {
+          "id": "8:1447",
+          "text": "Próxima recompra"
+        },
+        {
+          "id": "8:1449",
+          "text": "Eli"
+        },
+        {
+          "id": "8:1451",
+          "text": "Contactar →"
+        },
+        {
+          "id": "8:1454",
+          "text": "Seguimiento responsable"
+        },
+        {
+          "id": "8:1455",
+          "text": "Incidencias y devoluciones se vinculan al pedido y lote. Una reposición necesita autorización explícita."
+        },
+        {
+          "id": "8:1457",
+          "text": "Oportunidades de recompra"
+        },
+        {
+          "id": "8:1459",
+          "text": "Hotel Alameda"
+        },
+        {
+          "id": "8:1460",
+          "text": "Última compra: 18 sep.\nConsumo estimado: 30 días"
+        },
+        {
+          "id": "I8:1461;3:90",
+          "text": "Preparar seguimiento"
+        },
+        {
+          "id": "8:1464",
+          "text": "Grupo Horizonte"
+        },
+        {
+          "id": "8:1465",
+          "text": "Sin compra en 60 días\nResponsable: Eli"
+        },
+        {
+          "id": "I8:1466;3:92",
+          "text": "Recuperar cuenta"
+        },
+        {
+          "id": "8:1468",
+          "text": "Sara prepara seguimientos para clientes sin compra en más de 30 días. Crear un pedido requiere confirmación."
+        }
+      ]
+    },
+    {
+      "id": "3:127",
+      "name": "20 · Reportes y atribución",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I8:1585;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I8:1588;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I8:1590;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "50:939",
+          "text": "Reportes comerciales"
+        },
+        {
+          "id": "50:940",
+          "text": "Semana / mes · Seguimiento de prospectos, clientes actuales y resultados de cada ruta."
+        },
+        {
+          "id": "I50:942;3:103",
+          "text": "Venta directa Sara"
+        },
+        {
+          "id": "I50:942;3:104",
+          "text": "12 / 40"
+        },
+        {
+          "id": "I50:942;3:105",
+          "text": "Pedidos / oportunidades: 30%"
+        },
+        {
+          "id": "I50:947;3:103",
+          "text": "Ruta con muestra"
+        },
+        {
+          "id": "I50:947;3:104",
+          "text": "4 / 16"
+        },
+        {
+          "id": "I50:947;3:105",
+          "text": "Pedidos / oportunidades: 25%"
+        },
+        {
+          "id": "I50:952;3:103",
+          "text": "Clientes nuevos"
+        },
+        {
+          "id": "I50:952;3:104",
+          "text": "08"
+        },
+        {
+          "id": "I50:952;3:105",
+          "text": "Altas durante el periodo"
+        },
+        {
+          "id": "I50:957;3:103",
+          "text": "Recompra pendiente"
+        },
+        {
+          "id": "I50:957;3:104",
+          "text": "08"
+        },
+        {
+          "id": "I50:957;3:105",
+          "text": "Sin compra en más de 30 días"
+        },
+        {
+          "id": "50:964",
+          "text": "Prospectos y avance"
+        },
+        {
+          "id": "50:965",
+          "text": "Nuevos: 24\nEn asesoría: 18\nCotización pendiente: 8\nRequieren intervención humana: 5\nRevisar responsable y próxima acción."
+        },
+        {
+          "id": "I50:966;3:76",
+          "text": "Ver pipeline"
+        },
+        {
+          "id": "50:970",
+          "text": "Clientes actuales y equipo"
+        },
+        {
+          "id": "50:971",
+          "text": "Revisar cartera asignada, actividad y citas.\nDistinguir cierre de Sara de venta asistida.\nConservar motivos de pérdida y resultados de muestra.\nFacturación se registra por separado de ventas."
+        },
+        {
+          "id": "I50:972;3:76",
+          "text": "Ver seguimiento"
+        },
+        {
+          "id": "50:976",
+          "text": "Comparaciones consistentes"
+        },
+        {
+          "id": "50:977",
+          "text": "Filtrar por fecha de creación de oportunidad y su ruta actual. Conversión = oportunidades con pedido confirmado / oportunidades del periodo. Datos ilustrativos; los importes facturados requieren una fuente de facturación."
+        }
+      ]
+    },
+    {
+      "id": "3:128",
+      "name": "21 · Automatizaciones n8n",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I8:1822;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I8:1825;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I8:1827;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "8:1831",
+          "text": "Automatizaciones"
+        },
+        {
+          "id": "8:1832",
+          "text": "Seguimiento de pedidos y mensajes al cliente desde un solo lugar."
+        },
+        {
+          "id": "I8:1834;3:103",
+          "text": "Flujos activos"
+        },
+        {
+          "id": "I8:1834;3:104",
+          "text": "08"
+        },
+        {
+          "id": "I8:1834;3:105",
+          "text": "Atención, agenda y operación"
+        },
+        {
+          "id": "I8:1838;3:103",
+          "text": "Ejecuciones hoy"
+        },
+        {
+          "id": "I8:1838;3:104",
+          "text": "246"
+        },
+        {
+          "id": "I8:1838;3:105",
+          "text": "Eventos procesados"
+        },
+        {
+          "id": "I8:1842;3:103",
+          "text": "Pendientes"
+        },
+        {
+          "id": "I8:1842;3:104",
+          "text": "03"
+        },
+        {
+          "id": "I8:1842;3:105",
+          "text": "En cola para reintento"
+        },
+        {
+          "id": "I8:1846;3:103",
+          "text": "Requieren atención"
+        },
+        {
+          "id": "I8:1846;3:104",
+          "text": "01"
+        },
+        {
+          "id": "I8:1846;3:105",
+          "text": "Notificación de despacho"
+        },
+        {
+          "id": "8:1851",
+          "text": "Flujos operativos"
+        },
+        {
+          "id": "8:1855",
+          "text": "Automatización"
+        },
+        {
+          "id": "8:1857",
+          "text": "Disparador"
+        },
+        {
+          "id": "8:1859",
+          "text": "Resultado en CRM"
+        },
+        {
+          "id": "8:1861",
+          "text": "Estado"
+        },
+        {
+          "id": "8:1863",
+          "text": ""
+        },
+        {
+          "id": "8:1866",
+          "text": "Atención omnicanal"
+        },
+        {
+          "id": "8:1868",
+          "text": "Mensaje entrante"
+        },
+        {
+          "id": "8:1870",
+          "text": "Conversación + acciones"
+        },
+        {
+          "id": "I8:1872;3:94",
+          "text": "Activo"
+        },
+        {
+          "id": "8:1875",
+          "text": "Ver historial →"
+        },
+        {
+          "id": "8:1879",
+          "text": "Agenda comercial"
+        },
+        {
+          "id": "8:1881",
+          "text": "Cliente elige horario"
+        },
+        {
+          "id": "8:1883",
+          "text": "Cita + evento + aviso"
+        },
+        {
+          "id": "I8:1885;3:94",
+          "text": "Activo"
+        },
+        {
+          "id": "8:1888",
+          "text": "Ver agenda →"
+        },
+        {
+          "id": "8:1892",
+          "text": "Recepción de comprobante"
+        },
+        {
+          "id": "8:1894",
+          "text": "Archivo vinculado"
+        },
+        {
+          "id": "8:1896",
+          "text": "Pedido por autorizar"
+        },
+        {
+          "id": "I8:1898;3:94",
+          "text": "Activo"
+        },
+        {
+          "id": "8:1901",
+          "text": "Ver pedido →"
+        },
+        {
+          "id": "8:1905",
+          "text": "Liberación de producción"
+        },
+        {
+          "id": "8:1907",
+          "text": "Admin autoriza"
+        },
+        {
+          "id": "8:1909",
+          "text": "Una orden + reserva"
+        },
+        {
+          "id": "I8:1911;3:94",
+          "text": "Activo"
+        },
+        {
+          "id": "8:1914",
+          "text": "Ver producción →"
+        },
+        {
+          "id": "8:1918",
+          "text": "Aviso de despacho"
+        },
+        {
+          "id": "8:1920",
+          "text": "Admin 1 registra guía"
+        },
+        {
+          "id": "8:1922",
+          "text": "Envío + notificación"
+        },
+        {
+          "id": "I8:1924;3:92",
+          "text": "Reintento"
+        },
+        {
+          "id": "8:1927",
+          "text": "Revisar →"
+        },
+        {
+          "id": "8:1931",
+          "text": "Recompra"
+        },
+        {
+          "id": "8:1933",
+          "text": "Fecha estimada"
+        },
+        {
+          "id": "8:1935",
+          "text": "Tarea asignada"
+        },
+        {
+          "id": "I8:1937;3:94",
+          "text": "Activo"
+        },
+        {
+          "id": "8:1940",
+          "text": "Ver tareas →"
+        },
+        {
+          "id": "8:1943",
+          "text": "Controles de ejecución"
+        },
+        {
+          "id": "8:1944",
+          "text": "Confirmación → Producción → Envío con guía → Entrega → Postventa. Si un aviso falla, se conserva para reintento."
+        }
+      ]
+    },
+    {
+      "id": "3:129",
+      "name": "22 · Historial de atención IA",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I9:788;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I9:791;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I9:793;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "9:797",
+          "text": "Historial de Sara IA"
+        },
+        {
+          "id": "9:798",
+          "text": "María López · Hotel Alameda · Conversación WA-00841"
+        },
+        {
+          "id": "9:801",
+          "text": "Eventos registrados en el CRM"
+        },
+        {
+          "id": "9:803",
+          "text": "09:42:01 · Mensaje recibido"
+        },
+        {
+          "id": "9:804",
+          "text": "WhatsApp · Cliente identificado y conversación vinculada."
+        },
+        {
+          "id": "I9:805;3:94",
+          "text": "Registrado"
+        },
+        {
+          "id": "9:808",
+          "text": "09:42:03 · Catálogo consultado"
+        },
+        {
+          "id": "9:809",
+          "text": "Productos y precios obtenidos del CRM. Sin cambios de inventario."
+        },
+        {
+          "id": "I9:810;3:94",
+          "text": "Completado"
+        },
+        {
+          "id": "9:813",
+          "text": "09:44:16 · Pedido HE-1048 creado"
+        },
+        {
+          "id": "9:814",
+          "text": "Ruta: venta directa con Sara IA · Cliente confirmó por WhatsApp · Responsable humano: Eli."
+        },
+        {
+          "id": "I9:815;3:94",
+          "text": "Una sola creación"
+        },
+        {
+          "id": "9:818",
+          "text": "09:47:22 · Comprobante recibido"
+        },
+        {
+          "id": "9:819",
+          "text": "Archivo guardado y vinculado. Aviso a Admin 1 y Admin 2."
+        },
+        {
+          "id": "I9:820;3:92",
+          "text": "Por autorizar"
+        },
+        {
+          "id": "9:823",
+          "text": "09:47:24 · Respuesta enviada"
+        },
+        {
+          "id": "9:824",
+          "text": "Se informó al cliente que el pedido espera revisión administrativa."
+        },
+        {
+          "id": "I9:825;3:94",
+          "text": "Enviado"
+        },
+        {
+          "id": "9:828",
+          "text": "Control de la atención"
+        },
+        {
+          "id": "I9:829;3:90",
+          "text": "Atiende Sara IA"
+        },
+        {
+          "id": "9:831",
+          "text": "Resumen"
+        },
+        {
+          "id": "9:832",
+          "text": "Sara asesoró sobre productos y aromas. Venta directa confirmada; pedido creado y comprobante pendiente de revisión."
+        },
+        {
+          "id": "I9:833;3:74",
+          "text": "Tomar atención humana"
+        },
+        {
+          "id": "9:836",
+          "text": "Vendedor asignado"
+        },
+        {
+          "id": "I9:837;3:101",
+          "text": "Eli"
+        },
+        {
+          "id": "9:840",
+          "text": "Transferencia con contexto"
+        },
+        {
+          "id": "9:841",
+          "text": "Sara se pausa al transferir. El vendedor recibe necesidades, aromas, cotización y próxima acción."
+        },
+        {
+          "id": "9:843",
+          "text": "Registro durable"
+        },
+        {
+          "id": "9:844",
+          "text": "Transferir si el cliente lo solicita, faltan datos aprobados o pide una excepción. Agendar según disponibilidad real."
+        },
+        {
+          "id": "I9:845;3:76",
+          "text": "Abrir conversación completa"
+        }
+      ]
+    },
+    {
+      "id": "3:130",
+      "name": "23 · Equipo y permisos",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I9:963;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I9:966;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I9:968;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "9:972",
+          "text": "Equipo y permisos"
+        },
+        {
+          "id": "9:973",
+          "text": "5 usuarios iniciales · Roles y asignaciones preparados para crecer."
+        },
+        {
+          "id": "I9:974;3:74",
+          "text": "Invitar usuario"
+        },
+        {
+          "id": "I9:977;3:74",
+          "text": "Usuarios"
+        },
+        {
+          "id": "I9:979;3:76",
+          "text": "Roles y permisos"
+        },
+        {
+          "id": "I9:981;3:76",
+          "text": "Integraciones"
+        },
+        {
+          "id": "I9:983;3:76",
+          "text": "Auditoría"
+        },
+        {
+          "id": "9:986",
+          "text": "Equipo Hotel Expert"
+        },
+        {
+          "id": "9:990",
+          "text": "Usuario"
+        },
+        {
+          "id": "9:992",
+          "text": "Rol"
+        },
+        {
+          "id": "9:994",
+          "text": "Alcance"
+        },
+        {
+          "id": "9:996",
+          "text": "Responsabilidad"
+        },
+        {
+          "id": "9:998",
+          "text": ""
+        },
+        {
+          "id": "9:1001",
+          "text": "Admin 1"
+        },
+        {
+          "id": "9:1003",
+          "text": "Administrador"
+        },
+        {
+          "id": "9:1005",
+          "text": "Toda la operación"
+        },
+        {
+          "id": "9:1007",
+          "text": "Autorizar y registrar despachos"
+        },
+        {
+          "id": "9:1009",
+          "text": "Ver inicio →"
+        },
+        {
+          "id": "9:1013",
+          "text": "Admin 2"
+        },
+        {
+          "id": "9:1015",
+          "text": "Administrador"
+        },
+        {
+          "id": "9:1017",
+          "text": "Toda la operación"
+        },
+        {
+          "id": "9:1019",
+          "text": "Autorizar y supervisar"
+        },
+        {
+          "id": "9:1021",
+          "text": "Ver inicio →"
+        },
+        {
+          "id": "9:1025",
+          "text": "Eli"
+        },
+        {
+          "id": "9:1027",
+          "text": "Vendedora"
+        },
+        {
+          "id": "9:1029",
+          "text": "Solo cartera asignada"
+        },
+        {
+          "id": "9:1031",
+          "text": "Atención, llamadas y ventas"
+        },
+        {
+          "id": "9:1033",
+          "text": "Vista del rol →"
+        },
+        {
+          "id": "9:1037",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "9:1039",
+          "text": "Vendedor"
+        },
+        {
+          "id": "9:1041",
+          "text": "Solo cartera asignada"
+        },
+        {
+          "id": "9:1043",
+          "text": "Atención, llamadas y ventas"
+        },
+        {
+          "id": "9:1045",
+          "text": "Vista del rol →"
+        },
+        {
+          "id": "9:1049",
+          "text": "Producción"
+        },
+        {
+          "id": "9:1051",
+          "text": "Operación"
+        },
+        {
+          "id": "9:1053",
+          "text": "Solo órdenes asignadas"
+        },
+        {
+          "id": "9:1055",
+          "text": "Elaboración y empaque"
+        },
+        {
+          "id": "9:1057",
+          "text": "Vista del rol →"
+        },
+        {
+          "id": "9:1061",
+          "text": "Permisos aplicados en servidor"
+        },
+        {
+          "id": "9:1062",
+          "text": "Búsqueda, archivos, exportaciones, notificaciones e IA respetan el mismo alcance. Ocultar un menú no es suficiente."
+        },
+        {
+          "id": "9:1064",
+          "text": "Escalabilidad"
+        },
+        {
+          "id": "9:1065",
+          "text": "Agregar usuarios, equipos, canales y almacenes sin fijar nombres en la lógica. Registro de quién cambia cada dato."
+        },
+        {
+          "id": "9:1066",
+          "text": "Integraciones previstas: Google Workspace · WhatsApp · Meta · TikTok Shop · Web en GoDaddy · n8n"
+        }
+      ]
+    },
+    {
+      "id": "3:131",
+      "name": "24 · Mi día / Vendedora",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I9:1136;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I9:1139;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I9:1141;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "9:1145",
+          "text": "Buenos días, Eli."
+        },
+        {
+          "id": "9:1146",
+          "text": "Tu cartera, tus llamadas y lo que sigue hoy."
+        },
+        {
+          "id": "I9:1147;3:74",
+          "text": "Agendar llamada"
+        },
+        {
+          "id": "I9:1150;3:103",
+          "text": "Mis oportunidades"
+        },
+        {
+          "id": "I9:1150;3:104",
+          "text": "12"
+        },
+        {
+          "id": "I9:1150;3:105",
+          "text": "3 requieren seguimiento"
+        },
+        {
+          "id": "I9:1154;3:103",
+          "text": "Mis llamadas hoy"
+        },
+        {
+          "id": "I9:1154;3:104",
+          "text": "04"
+        },
+        {
+          "id": "I9:1154;3:105",
+          "text": "2 Meet · 2 telefónicas"
+        },
+        {
+          "id": "I9:1158;3:103",
+          "text": "Mis conversaciones"
+        },
+        {
+          "id": "I9:1158;3:104",
+          "text": "08"
+        },
+        {
+          "id": "I9:1158;3:105",
+          "text": "2 requieren intervención"
+        },
+        {
+          "id": "I9:1162;3:103",
+          "text": "Mis pedidos"
+        },
+        {
+          "id": "I9:1162;3:104",
+          "text": "07"
+        },
+        {
+          "id": "I9:1162;3:105",
+          "text": "1 espera autorización"
+        },
+        {
+          "id": "9:1168",
+          "text": "Tu siguiente llamada"
+        },
+        {
+          "id": "I9:1169;3:90",
+          "text": "Hoy · 10:30–11:00"
+        },
+        {
+          "id": "9:1171",
+          "text": "Hotel Alameda · María López"
+        },
+        {
+          "id": "9:1172",
+          "text": "Google Meet · Interés en limpieza y aroma\nEl bot recopiló la necesidad y agendó la llamada."
+        },
+        {
+          "id": "I9:1174;3:74",
+          "text": "Ver cita"
+        },
+        {
+          "id": "I9:1176;3:76",
+          "text": "Preparar seguimiento"
+        },
+        {
+          "id": "9:1179",
+          "text": "Prioridades de tu cartera"
+        },
+        {
+          "id": "9:1181",
+          "text": "Hotel Mirador · Consulta de aplicación"
+        },
+        {
+          "id": "9:1182",
+          "text": "Transferido por el bot · hace 8 min"
+        },
+        {
+          "id": "I9:1183;3:92",
+          "text": "Tomar atención"
+        },
+        {
+          "id": "9:1186",
+          "text": "Hotel Alameda · Pedido HE-1048"
+        },
+        {
+          "id": "9:1187",
+          "text": "Comprobante recibido. Solo un admin puede autorizarlo."
+        },
+        {
+          "id": "I9:1188;3:90",
+          "text": "Consultar estado"
+        },
+        {
+          "id": "9:1191",
+          "text": "Mis seguimientos"
+        },
+        {
+          "id": "9:1195",
+          "text": "Cliente"
+        },
+        {
+          "id": "9:1197",
+          "text": "Acción"
+        },
+        {
+          "id": "9:1199",
+          "text": "Vence"
+        },
+        {
+          "id": "9:1201",
+          "text": ""
+        },
+        {
+          "id": "9:1204",
+          "text": "Grupo Horizonte"
+        },
+        {
+          "id": "9:1206",
+          "text": "Evaluar muestra entregada"
+        },
+        {
+          "id": "9:1208",
+          "text": "Hoy · 12:00"
+        },
+        {
+          "id": "9:1210",
+          "text": "Abrir →"
+        },
+        {
+          "id": "9:1214",
+          "text": "Hotel Alameda"
+        },
+        {
+          "id": "9:1216",
+          "text": "Confirmar necesidades de recompra"
+        },
+        {
+          "id": "9:1218",
+          "text": "Hoy · 16:00"
+        },
+        {
+          "id": "9:1220",
+          "text": "Contactar →"
+        },
+        {
+          "id": "9:1222",
+          "text": "Esta vista solo muestra registros asignados a Eli."
+        }
+      ]
+    },
+    {
+      "id": "3:132",
+      "name": "25 · Mi trabajo / Producción",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I9:1257;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I9:1260;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I9:1262;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "9:1266",
+          "text": "Tu jornada de producción"
+        },
+        {
+          "id": "9:1267",
+          "text": "Órdenes autorizadas y asignadas a tu usuario."
+        },
+        {
+          "id": "I9:1269;3:103",
+          "text": "Por elaborar"
+        },
+        {
+          "id": "I9:1269;3:104",
+          "text": "03"
+        },
+        {
+          "id": "I9:1269;3:105",
+          "text": "Materiales reservados"
+        },
+        {
+          "id": "I9:1273;3:103",
+          "text": "En proceso"
+        },
+        {
+          "id": "I9:1273;3:104",
+          "text": "02"
+        },
+        {
+          "id": "I9:1273;3:105",
+          "text": "Registra consumo real"
+        },
+        {
+          "id": "I9:1277;3:103",
+          "text": "Por empacar"
+        },
+        {
+          "id": "I9:1277;3:104",
+          "text": "02"
+        },
+        {
+          "id": "I9:1277;3:105",
+          "text": "Completa revisión"
+        },
+        {
+          "id": "I9:1281;3:103",
+          "text": "Listos"
+        },
+        {
+          "id": "I9:1281;3:104",
+          "text": "01"
+        },
+        {
+          "id": "I9:1281;3:105",
+          "text": "Admin 1 registrará el envío"
+        },
+        {
+          "id": "9:1286",
+          "text": "Mi cola de trabajo"
+        },
+        {
+          "id": "9:1290",
+          "text": "Orden / pedido"
+        },
+        {
+          "id": "9:1292",
+          "text": "Productos"
+        },
+        {
+          "id": "9:1294",
+          "text": "Fecha objetivo"
+        },
+        {
+          "id": "9:1296",
+          "text": "Estado"
+        },
+        {
+          "id": "9:1298",
+          "text": ""
+        },
+        {
+          "id": "9:1301",
+          "text": "OP-0312 · HE-1048"
+        },
+        {
+          "id": "9:1303",
+          "text": "20 L limpiador + 4 L aroma"
+        },
+        {
+          "id": "9:1305",
+          "text": "6 oct."
+        },
+        {
+          "id": "I9:1307;3:90",
+          "text": "Por elaborar"
+        },
+        {
+          "id": "9:1310",
+          "text": "Iniciar →"
+        },
+        {
+          "id": "9:1314",
+          "text": "OP-0310 · HE-1047"
+        },
+        {
+          "id": "9:1316",
+          "text": "15 L limpiador"
+        },
+        {
+          "id": "9:1318",
+          "text": "5 oct."
+        },
+        {
+          "id": "I9:1320;3:90",
+          "text": "En elaboración"
+        },
+        {
+          "id": "9:1323",
+          "text": "Continuar →"
+        },
+        {
+          "id": "9:1327",
+          "text": "OP-0308 · HE-1046"
+        },
+        {
+          "id": "9:1329",
+          "text": "24 unidades · 2 paquetes"
+        },
+        {
+          "id": "9:1331",
+          "text": "5 oct."
+        },
+        {
+          "id": "I9:1333;3:90",
+          "text": "En empaque"
+        },
+        {
+          "id": "9:1336",
+          "text": "Revisar →"
+        },
+        {
+          "id": "9:1340",
+          "text": "OP-0309 · HE-1044"
+        },
+        {
+          "id": "9:1342",
+          "text": "10 L limpiador"
+        },
+        {
+          "id": "9:1344",
+          "text": "6 oct."
+        },
+        {
+          "id": "I9:1346;3:92",
+          "text": "Faltan insumos"
+        },
+        {
+          "id": "9:1349",
+          "text": "Ver bloqueo →"
+        },
+        {
+          "id": "9:1353",
+          "text": "Solo lo necesario para producir"
+        },
+        {
+          "id": "9:1354",
+          "text": "Esta cuenta no ve ventas globales, comprobantes, conversaciones, precios ni carteras comerciales."
+        },
+        {
+          "id": "9:1356",
+          "text": "Al terminar el empaque"
+        },
+        {
+          "id": "9:1357",
+          "text": "Marca la orden como lista. Admin 1 recibe el aviso y registra paquetería, guía y salida."
+        }
+      ]
+    },
+    {
+      "id": "3:133",
+      "name": "26 · Muestras",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I9:1474;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I9:1477;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I9:1479;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "9:1483",
+          "text": "Muestras y demostraciones"
+        },
+        {
+          "id": "9:1484",
+          "text": "Ruta opcional: úsala si el cliente necesita probar; puede comprar sin esperar la muestra."
+        },
+        {
+          "id": "I9:1485;3:74",
+          "text": "Nueva solicitud"
+        },
+        {
+          "id": "I9:1488;3:74",
+          "text": "Solicitadas"
+        },
+        {
+          "id": "I9:1490;3:76",
+          "text": "En preparación"
+        },
+        {
+          "id": "I9:1492;3:76",
+          "text": "Enviadas"
+        },
+        {
+          "id": "I9:1494;3:76",
+          "text": "Evaluación"
+        },
+        {
+          "id": "I9:1496;3:76",
+          "text": "Resultados"
+        },
+        {
+          "id": "9:1499",
+          "text": "Seguimiento de muestras"
+        },
+        {
+          "id": "9:1503",
+          "text": "Solicitud / cliente"
+        },
+        {
+          "id": "9:1505",
+          "text": "Productos"
+        },
+        {
+          "id": "9:1507",
+          "text": "Responsable"
+        },
+        {
+          "id": "9:1509",
+          "text": "Estado"
+        },
+        {
+          "id": "9:1511",
+          "text": "Próxima acción"
+        },
+        {
+          "id": "9:1514",
+          "text": "M-0084 · Grupo Horizonte"
+        },
+        {
+          "id": "9:1516",
+          "text": "Limpieza + aroma ELAH"
+        },
+        {
+          "id": "9:1518",
+          "text": "Eli"
+        },
+        {
+          "id": "I9:1520;3:90",
+          "text": "En evaluación"
+        },
+        {
+          "id": "9:1523",
+          "text": "Llamar hoy · 12:00"
+        },
+        {
+          "id": "9:1527",
+          "text": "M-0083 · Hotel Brisa"
+        },
+        {
+          "id": "9:1529",
+          "text": "Aromatizante"
+        },
+        {
+          "id": "9:1531",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "I9:1533;3:90",
+          "text": "Enviada"
+        },
+        {
+          "id": "9:1536",
+          "text": "Confirmar recepción"
+        },
+        {
+          "id": "9:1540",
+          "text": "M-0082 · Hotel del Valle"
+        },
+        {
+          "id": "9:1542",
+          "text": "Limpiador profesional"
+        },
+        {
+          "id": "9:1544",
+          "text": "Vendedor 2"
+        },
+        {
+          "id": "I9:1546;3:92",
+          "text": "Por autorizar"
+        },
+        {
+          "id": "9:1549",
+          "text": "Revisión administrativa"
+        },
+        {
+          "id": "9:1553",
+          "text": "Resultado de la prueba"
+        },
+        {
+          "id": "9:1555",
+          "text": "Evaluación del cliente"
+        },
+        {
+          "id": "I9:1556;3:101",
+          "text": "Favorable · requiere cotización"
+        },
+        {
+          "id": "9:1559",
+          "text": "Notas de aplicación"
+        },
+        {
+          "id": "I9:1560;3:101",
+          "text": "Registrar área, aroma y observaciones"
+        },
+        {
+          "id": "I9:1562;3:74",
+          "text": "Cotizar y continuar"
+        },
+        {
+          "id": "9:1565",
+          "text": "Trazabilidad y consumo"
+        },
+        {
+          "id": "9:1566",
+          "text": "Vincula la muestra a la oportunidad existente. Registra solicitud, aroma, guía, evaluación y próxima acción. Su envío requiere autorización."
+        }
+      ]
+    },
+    {
+      "id": "3:134",
+      "name": "27 · Confirmar cita",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I9:1636;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I9:1639;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I9:1641;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "9:1645",
+          "text": "Confirmar llamada"
+        },
+        {
+          "id": "9:1646",
+          "text": "Hotel Alameda · María López · Responsable: Eli"
+        },
+        {
+          "id": "9:1649",
+          "text": "Detalles de la cita"
+        },
+        {
+          "id": "9:1652",
+          "text": "Día"
+        },
+        {
+          "id": "I9:1653;3:101",
+          "text": "Lunes 5 de octubre de 2026"
+        },
+        {
+          "id": "9:1656",
+          "text": "Hora"
+        },
+        {
+          "id": "I9:1657;3:101",
+          "text": "10:30–11:00"
+        },
+        {
+          "id": "9:1660",
+          "text": "Zona horaria"
+        },
+        {
+          "id": "I9:1661;3:101",
+          "text": "Monterrey · America/Monterrey"
+        },
+        {
+          "id": "9:1664",
+          "text": "Modalidad"
+        },
+        {
+          "id": "I9:1665;3:101",
+          "text": "Google Meet  ▾  /  Telefónica"
+        },
+        {
+          "id": "9:1668",
+          "text": "Contacto"
+        },
+        {
+          "id": "I9:1669;3:101",
+          "text": "María López · Hotel Alameda"
+        },
+        {
+          "id": "9:1672",
+          "text": "Motivo"
+        },
+        {
+          "id": "I9:1673;3:101",
+          "text": "Asesoría de limpieza y aromatización"
+        },
+        {
+          "id": "I9:1675;3:74",
+          "text": "Confirmar y notificar"
+        },
+        {
+          "id": "9:1678",
+          "text": "Disponibilidad y avisos"
+        },
+        {
+          "id": "I9:1679;3:94",
+          "text": "Espacio disponible"
+        },
+        {
+          "id": "9:1681",
+          "text": "Eli"
+        },
+        {
+          "id": "9:1682",
+          "text": "Lunes a viernes · 09:00–17:00\nCalendario de Google conectado"
+        },
+        {
+          "id": "9:1684",
+          "text": "Si eliges Google Meet"
+        },
+        {
+          "id": "9:1685",
+          "text": "Se crea el enlace y se incluye en el evento y en las confirmaciones."
+        },
+        {
+          "id": "9:1687",
+          "text": "Si eliges llamada telefónica"
+        },
+        {
+          "id": "9:1688",
+          "text": "Se confirma el teléfono y Eli recibe la tarea de llamar."
+        },
+        {
+          "id": "9:1689",
+          "text": "✓ Correo para Eli\n✓ Confirmación al cliente\n✓ Recordatorio previo\n✓ Actividad en el CRM"
+        },
+        {
+          "id": "I9:1691;3:76",
+          "text": "Reagendar"
+        },
+        {
+          "id": "I9:1693;3:78",
+          "text": "Cancelar cita"
+        },
+        {
+          "id": "9:1695",
+          "text": "Los cambios actualizan la misma cita y el mismo evento."
+        }
+      ]
+    },
+    {
+      "id": "3:135",
+      "name": "28 · Estados y excepciones",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        {
+          "id": "I9:1812;3:101",
+          "text": "Buscar cliente, pedido o conversación…"
+        },
+        {
+          "id": "I9:1815;3:94",
+          "text": "Operación al día"
+        },
+        {
+          "id": "I9:1817;3:76",
+          "text": "Mi perfil"
+        },
+        {
+          "id": "9:1821",
+          "text": "Estados que requieren atención"
+        },
+        {
+          "id": "9:1822",
+          "text": "Casos de diseño para resolver pendientes sin perder trazabilidad."
+        },
+        {
+          "id": "9:1825",
+          "text": "Aclaración del comprobante"
+        },
+        {
+          "id": "I9:1826;3:92",
+          "text": "Pedido retenido"
+        },
+        {
+          "id": "9:1828",
+          "text": "HE-1044 · El importe no coincide"
+        },
+        {
+          "id": "9:1830",
+          "text": "Mensaje al cliente"
+        },
+        {
+          "id": "I9:1831;3:101",
+          "text": "Solicitar aclaración sobre el importe recibido"
+        },
+        {
+          "id": "I9:1833;3:74",
+          "text": "Solicitar aclaración"
+        },
+        {
+          "id": "9:1836",
+          "text": "Notificación pendiente"
+        },
+        {
+          "id": "I9:1837;3:90",
+          "text": "El despacho se conserva"
+        },
+        {
+          "id": "9:1839",
+          "text": "La guía se guardó; el aviso no se envió."
+        },
+        {
+          "id": "9:1840",
+          "text": "El reintento envía solo la notificación pendiente. No vuelve a crear el despacho."
+        },
+        {
+          "id": "I9:1841;3:74",
+          "text": "Reintentar aviso"
+        },
+        {
+          "id": "9:1845",
+          "text": "Sin resultados"
+        },
+        {
+          "id": "9:1846",
+          "text": "No hay registros con estos filtros."
+        },
+        {
+          "id": "9:1847",
+          "text": "Ajusta el periodo o elimina un filtro para continuar."
+        },
+        {
+          "id": "I9:1848;3:76",
+          "text": "Restablecer filtros"
+        },
+        {
+          "id": "9:1851",
+          "text": "Sin disponibilidad"
+        },
+        {
+          "id": "9:1852",
+          "text": "Ese horario acaba de ocuparse."
+        },
+        {
+          "id": "9:1853",
+          "text": "Se conserva la solicitud y se ofrecen nuevos espacios libres."
+        },
+        {
+          "id": "I9:1854;3:76",
+          "text": "Ver otros horarios"
+        },
+        {
+          "id": "9:1857",
+          "text": "Acceso restringido"
+        },
+        {
+          "id": "9:1858",
+          "text": "Este registro no está asignado a tu usuario."
+        },
+        {
+          "id": "9:1859",
+          "text": "Contacta a un administrador para revisar la asignación."
+        },
+        {
+          "id": "I9:1860;3:76",
+          "text": "Volver a mi trabajo"
+        }
+      ]
+    }
+  ]
+}

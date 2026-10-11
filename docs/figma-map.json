@@ -1,0 +1,176 @@
+[
+  {
+    "nodeId": "3:108",
+    "name": "01 · Inicio / Administración",
+    "route": "#/home",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108"
+  },
+  {
+    "nodeId": "3:109",
+    "name": "02 · Atención omnicanal e IA",
+    "route": "#/attention",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-109"
+  },
+  {
+    "nodeId": "3:110",
+    "name": "03 · Clientes y hoteles",
+    "route": "#/clients",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-110"
+  },
+  {
+    "nodeId": "3:111",
+    "name": "04 · Expediente del cliente",
+    "route": "#/client",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-111"
+  },
+  {
+    "nodeId": "3:112",
+    "name": "05 · Oportunidades",
+    "route": "#/pipeline",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-112"
+  },
+  {
+    "nodeId": "3:113",
+    "name": "06 · Agenda comercial",
+    "route": "#/agenda",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-113"
+  },
+  {
+    "nodeId": "3:114",
+    "name": "07 · Disponibilidad",
+    "route": "#/agenda",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-114"
+  },
+  {
+    "nodeId": "3:115",
+    "name": "08 · Cotizaciones",
+    "route": "#/quotes",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-115"
+  },
+  {
+    "nodeId": "3:116",
+    "name": "09 · Crear cotización",
+    "route": "#/quote-new",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-116"
+  },
+  {
+    "nodeId": "3:117",
+    "name": "10 · Pedidos",
+    "route": "#/orders",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-117"
+  },
+  {
+    "nodeId": "3:118",
+    "name": "11 · Autorizar pedido",
+    "route": "#/approvals",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-118"
+  },
+  {
+    "nodeId": "3:119",
+    "name": "12 · Pedido autorizado",
+    "route": "#/orders",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-119"
+  },
+  {
+    "nodeId": "3:120",
+    "name": "13 · Producción",
+    "route": "#/production",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-120"
+  },
+  {
+    "nodeId": "3:121",
+    "name": "14 · Orden de elaboración",
+    "route": "#/production",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-121"
+  },
+  {
+    "nodeId": "3:122",
+    "name": "15 · Inventario",
+    "route": "#/inventory",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-122"
+  },
+  {
+    "nodeId": "3:123",
+    "name": "16 · Catálogo",
+    "route": "#/catalog",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-123"
+  },
+  {
+    "nodeId": "3:124",
+    "name": "17 · Despachos",
+    "route": "#/shipping",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-124"
+  },
+  {
+    "nodeId": "3:125",
+    "name": "18 · Registrar despacho",
+    "route": "#/shipping",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-125"
+  },
+  {
+    "nodeId": "3:126",
+    "name": "19 · Postventa y recompra",
+    "route": "#/aftercare",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-126"
+  },
+  {
+    "nodeId": "3:127",
+    "name": "20 · Reportes y atribución",
+    "route": "#/reports",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-127"
+  },
+  {
+    "nodeId": "3:128",
+    "name": "21 · Automatizaciones n8n",
+    "route": "#/automations",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-128"
+  },
+  {
+    "nodeId": "3:129",
+    "name": "22 · Historial de atención IA",
+    "route": "#/attention",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-129"
+  },
+  {
+    "nodeId": "3:130",
+    "name": "23 · Equipo y permisos",
+    "route": "#/team",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-130"
+  },
+  {
+    "nodeId": "3:131",
+    "name": "24 · Mi día / Vendedora",
+    "route": "#/home",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-131"
+  },
+  {
+    "nodeId": "3:132",
+    "name": "25 · Mi trabajo / Producción",
+    "route": "#/production",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-132"
+  },
+  {
+    "nodeId": "3:133",
+    "name": "26 · Muestras",
+    "route": "#/samples",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-133"
+  },
+  {
+    "nodeId": "3:134",
+    "name": "27 · Confirmar cita",
+    "route": "#/agenda",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-134"
+  },
+  {
+    "nodeId": "3:135",
+    "name": "28 · Estados y excepciones",
+    "route": "#/team",
+    "figma": "https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-135"
+  },
+  {
+    "nodeId": "53:852",
+    "name": "29 · Inicio móvil / Sara IA",
+    "route": "#/home",
+    "viewport": 390
+  }
+]
