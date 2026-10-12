@@ -5,6 +5,8 @@ import { apiMiddleware } from "./server/api-middleware.ts";
 const serverKeys = [
   "N8N_WHATSAPP_WEBHOOK_URL", "WHATSAPP_RELAY_SECRET",
   "META_WHATSAPP_VERIFY_TOKEN", "META_WHATSAPP_APP_SECRET",
+  "VITE_BACKEND", "DATABASE_URL", "DATABASE_ADMIN_URL", "PG_PORT",
+  "ALLOW_REGISTRATION", "COOKIE_SECURE", "APP_ORIGIN",
 ];
 
 export default defineConfig(({ mode }) => {

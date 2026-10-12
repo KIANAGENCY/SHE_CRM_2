@@ -1,11 +1,13 @@
 import { createClient } from "@supabase/supabase-js";
+import * as local from "./local-api.ts";
 
 const environment = (import.meta.env || {}) as Record<string, string | undefined>;
 const supabaseUrl = environment.VITE_SUPABASE_URL?.trim();
 const publishableKey = environment.VITE_SUPABASE_PUBLISHABLE_KEY?.trim();
 
-export const cloudEnabled = Boolean(supabaseUrl && publishableKey);
-export const supabase = cloudEnabled
+export const localBackend = environment.VITE_BACKEND === "local";
+export const cloudEnabled = localBackend || Boolean(supabaseUrl && publishableKey);
+export const supabase = !localBackend && cloudEnabled
   ? createClient(supabaseUrl, publishableKey, {
       auth: { persistSession: true, autoRefreshToken: true },
     })
@@ -28,10 +30,12 @@ function assert(result) {
 }
 
 export async function signIn(email, password) {
+  if (localBackend) return local.login(email, password);
   return assert(await supabase.auth.signInWithPassword({ email, password }));
 }
 
 export async function signUp({ email, password, fullName, workspaceName }) {
+  if (localBackend) return local.signup({ email, password, fullName, workspaceName });
   return assert(
     await supabase.auth.signUp({
       email,
@@ -48,16 +52,19 @@ export async function signUp({ email, password, fullName, workspaceName }) {
 }
 
 export async function signOut() {
+  if (localBackend) return local.logout();
   return assert(await supabase.auth.signOut());
 }
 
 export function onAuthStateChange(callback) {
+  if (localBackend) return local.subscribe(callback);
   if (!supabase) return () => {};
   const { data } = supabase.auth.onAuthStateChange(callback);
   return () => data.subscription.unsubscribe();
 }
 
 export async function getCloudContext() {
+  if (localBackend) return local.context();
   if (!supabase) return null;
   const { data, error } = await supabase.auth.getUser();
   if (error && error.name !== "AuthSessionMissingError") throw error;
@@ -397,6 +404,7 @@ function rowMap(rows: any) {
 }
 
 export async function loadCloudState(context, client = supabase) {
+  if (localBackend) return local.load(context, toRows, fromRows);
   const results = await Promise.all(
     tables.map(async (table) => {
       if (table === "crm_settings") {
@@ -426,6 +434,7 @@ const upsertOptions = (table) => ({
 });
 
 export async function pushCloudState(state, context, client = supabase) {
+  if (localBackend) return local.push(state, context, toRows);
   const rows = toRows(state, context.workspace.id);
   const baseline = syncedRows.get(context) || rowMap(
     Object.fromEntries(tables.map((table) => [table, []])),
@@ -497,6 +506,7 @@ export async function pushCloudState(state, context, client = supabase) {
 }
 
 export async function updateProductionOrder(order, context, client = supabase) {
+  if (localBackend) return local.pack(order, context);
   if (context.role !== "production") return;
   if (order.status !== "Empacado") throw new Error("Producción solo puede registrar el empaque.");
   // The RPC commits the stage, notification and audit entry in one transaction.
@@ -506,6 +516,7 @@ export async function updateProductionOrder(order, context, client = supabase) {
 }
 
 export async function deleteCloudRecord(table, id, context) {
+  if (localBackend) return local.remove(table, id, context);
   if (!context || context.role === "production") return;
   assert(
     await supabase

@@ -1,0 +1,15 @@
+import { loadEnv } from 'vite';
+import { mkdirSync } from 'node:fs';
+import { join,resolve } from 'node:path';
+import { spawnSync } from 'node:child_process';
+const env={...loadEnv('development',process.cwd(),''),...process.env};
+if(!env.DATABASE_ADMIN_URL) throw new Error('Falta DATABASE_ADMIN_URL.');
+const url=new URL(env.DATABASE_ADMIN_URL);
+const destination=resolve('.local/backups');
+mkdirSync(destination,{recursive:true});
+const file=join(destination,`she-crm-${new Date().toISOString().replace(/[:.]/g,'-')}.dump`);
+const bin=env.PG_BIN || (process.platform==='win32'?'C:/Program Files/PostgreSQL/18/bin':'');
+const executable=bin?join(bin,process.platform==='win32'?'pg_dump.exe':'pg_dump'):'pg_dump';
+const result=spawnSync(executable,['--format=custom','--file',file],{windowsHide:true,encoding:'utf8',env:{...process.env,PGHOST:url.hostname,PGPORT:url.port||'5432',PGDATABASE:decodeURIComponent(url.pathname.slice(1)),PGUSER:decodeURIComponent(url.username),PGPASSWORD:decodeURIComponent(url.password)}});
+if(result.status!==0) throw new Error(result.error?.message||result.stderr||'Error al crear respaldo.');
+console.log(`Respaldo: ${file}`);
