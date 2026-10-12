@@ -1,6 +1,22 @@
 # Hotel Expert · CRM & Operación
 
-CRM alineado con [Figma](https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108): venta directa con Sara IA, muestras opcionales, cotizaciones, pedidos y seguimiento. La interfaz está implementada con React y TypeScript; la lógica de negocio y las API del servidor usan TypeScript sobre Node.js. Puede trabajar como demostración local o conectado a Supabase con cuentas, espacios de trabajo y permisos reales.
+CRM alineado con [Figma](https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108): venta directa con Sara IA, muestras opcionales, cotizaciones, pedidos y seguimiento. La interfaz y las funciones de Supabase usan React y TypeScript. También incluye un backend Node.js y PostgreSQL local, con cuentas, espacios de trabajo y permisos reales.
+
+## PostgreSQL local con API propia
+
+El backend local usa PostgreSQL y sesiones seguras en Node.js. Requiere Node.js 20.19+ y PostgreSQL 18 instalado (incluidos `initdb` y `pg_ctl`).
+
+```sh
+npm ci
+npm run db:local
+npm run db:migrate
+npm run build
+npm start
+```
+
+Abre `http://127.0.0.1:3000` y crea la primera cuenta de Dirección. La base local escucha solo en `127.0.0.1:55432`; `db:local` genera credenciales en `.env.local`, que no se sube al repositorio. El registro queda cerrado después de crear la primera cuenta. Dirección administra el equipo desde el CRM. Consulta [POSTGRESQL.md](docs/POSTGRESQL.md) para configurar otra instancia, respaldos y detalles de la API.
+
+Para desarrollo con Vite, configura `VITE_BACKEND=local` y las variables generadas en `.env.local`, luego ejecuta `npm run dev`. El modo local requiere que Node sirva `/api/crm`; desplegarlo en Vercel no inicia PostgreSQL local.
 
 ## Ejecutar
 
@@ -33,6 +49,8 @@ El build de Vite queda en `dist/` y puede desplegarse en Vercel. Las rutas usan 
 1. Crear un proyecto y aplicar **todas** las migraciones de `supabase/migrations/` en orden por nombre, mediante `supabase db push` con el proyecto vinculado o desde el editor SQL.
 2. Copiar `.env.example` a `.env.local`.
 3. Configurar `VITE_SUPABASE_URL` y `VITE_SUPABASE_PUBLISHABLE_KEY` con la URL y la clave publicable del proyecto.
+
+En Vercel, deja `VITE_BACKEND` vacío y configura únicamente esas dos variables de cliente para usar Supabase. Nunca configures credenciales de PostgreSQL en variables `VITE_*` ni publiques claves de servicio en el navegador.
 
 La aplicación usa únicamente la clave publicable en el navegador. Las tablas tienen Row Level Security, permisos explícitos y aislamiento por espacio de trabajo. Al crear la primera cuenta también se crean su perfil, su espacio y la membresía de Dirección.
 
