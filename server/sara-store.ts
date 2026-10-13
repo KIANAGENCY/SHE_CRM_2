@@ -98,7 +98,9 @@ export function openSaraStore(path = resolve('.local/sara-crm.sqlite')) {
         const body = await response.text();
         if (Buffer.byteLength(body)>20*1024*1024) throw new Error('La respuesta excede el tamaño permitido.');
         importSnapshot(JSON.parse(body));
-      } catch(error) { put('error',error.message === 'fetch failed' ? 'No fue posible conectar con n8n.' : error.message); }
+      } catch(error) {
+        put('error',error.code === 'ENOENT' ? 'La conexión de SARA está pendiente de configuración.' : error.message === 'fetch failed' ? 'No fue posible conectar con n8n.' : error.message);
+      }
       finally { pending = null; }
     })();
     return pending;
