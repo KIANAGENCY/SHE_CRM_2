@@ -1,8 +1,8 @@
 import type { IncomingMessage } from 'node:http';
 import { headerValue, sameSecret } from './webhook-utils.ts';
 
-// Public SARA access requires a proxy that authenticates users and injects a
-// private gateway header. Never publish the application port directly.
+// Public SARA access requires a private proxy header and exact HTTPS origin.
+// sara-api checks the CRM session. Never publish the application port directly.
 export function saraAccess(request: IncomingMessage): number | null {
   const host = request.headers.host;
   const configuredOrigin = process.env.SARA_PUBLIC_ORIGIN;

@@ -1,9 +1,15 @@
 const collections = ['clients','opportunities','products','aromas','quotes','orders','samples','appointments','tasks','notifications','audit','conversations'];
 let baseline:any, revision:number, queue=Promise.resolve();
+const listeners = new Set<(event: string) => void>();
+function emit(event: string) { for (const listener of listeners) listener(event); }
+export function subscribe(callback: (event: string) => void) { listeners.add(callback); return () => { listeners.delete(callback); }; }
 async function request(path:string,body?:any) {
   const response = await fetch(`/api/sara${path}`,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined,credentials:'same-origin'});
   const result=await response.json();
-  if(!response.ok) throw Object.assign(new Error(result.error || 'No se pudo conectar con el CRM.'),{status:response.status});
+  if(!response.ok) {
+    if(response.status===401 && path!=='/auth/login') emit('SIGNED_OUT');
+    throw Object.assign(new Error(result.error || 'No se pudo conectar con el CRM.'),{status:response.status});
+  }
   return result;
 }
 export async function load(force=false) {
@@ -29,4 +35,13 @@ export function push(state:any) {
   });
   queue=operation.catch(()=>{});return operation;
 }
-export const context=()=>Promise.resolve({user:{id:'local',email:'Acceso en esta computadora'},workspace:{id:'sara-local',name:'Hotel Expert'},role:'owner',roleLabel:'Dirección'});
+export const context=async()=> (await request('/session')).context;
+export async function login(username: string,password: string) {
+  const result=await request('/auth/login',{username,password});
+  baseline=undefined;queue=Promise.resolve();emit('SIGNED_IN');return result;
+}
+export async function logout() {
+  await queue;
+  await request('/auth/logout',{});
+  baseline=undefined;queue=Promise.resolve();emit('SIGNED_OUT');
+}

@@ -14,6 +14,8 @@ services:
       VITE_BACKEND: n8n
       SARA_PUBLIC_ORIGIN: https://crm.hotelexpert.mx
       SARA_PROXY_SECRET: ${SARA_PROXY_SECRET:?Configure SARA_PROXY_SECRET}
+      CRM_LOGIN_USER: ${CRM_LOGIN_USER:-direccion}
+      CRM_LOGIN_PASSWORD_HASH: ${CRM_LOGIN_PASSWORD_HASH:?Configure CRM_LOGIN_PASSWORD_HASH}
       APP_ORIGIN: https://crm.hotelexpert.mx
       COOKIE_SECURE: "true"
       N8N_WHATSAPP_WEBHOOK_URL: ${N8N_WHATSAPP_WEBHOOK_URL:-}
@@ -30,7 +32,7 @@ services:
       traefik.http.routers.she-crm.rule: Host(`crm.hotelexpert.mx`)
       traefik.http.routers.she-crm.entrypoints: websecure
       traefik.http.routers.she-crm.tls.certresolver: le
-      traefik.http.routers.she-crm.middlewares: she-crm-auth,she-crm-gateway
+      traefik.http.routers.she-crm.middlewares: she-crm-gateway
       traefik.http.routers.she-crm.service: she-crm
       # WhatsApp authenticates requests with its existing token/HMAC checks.
       traefik.http.routers.she-crm-webhooks.rule: Host(`crm.hotelexpert.mx`) && (Path(`/api/whatsapp-relay`) || Path(`/api/meta-whatsapp-webhook`))
@@ -38,8 +40,6 @@ services:
       traefik.http.routers.she-crm-webhooks.tls.certresolver: le
       traefik.http.routers.she-crm-webhooks.service: she-crm
       traefik.http.services.she-crm.loadbalancer.server.port: "3000"
-      traefik.http.middlewares.she-crm-auth.basicauth.users: ${CRM_BASIC_AUTH_USERS:?Configure CRM_BASIC_AUTH_USERS}
-      traefik.http.middlewares.she-crm-auth.basicauth.removeheader: "true"
       traefik.http.middlewares.she-crm-gateway.headers.customrequestheaders.X-SHE-Proxy-Secret: ${SARA_PROXY_SECRET:?Configure SARA_PROXY_SECRET}
     healthcheck:
       test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]

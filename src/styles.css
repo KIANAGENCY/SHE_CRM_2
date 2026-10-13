@@ -838,6 +838,7 @@ dialog::backdrop {
 }
 
 /* React interface layout and dialogs */
+.auth-logo { display:block; width:140px; height:70px; object-fit:contain; margin-bottom:16px; }
 .react-shell { min-height: 100vh; }
 .panel-title { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:12px; }
 .panel-title h2 { margin:0; }

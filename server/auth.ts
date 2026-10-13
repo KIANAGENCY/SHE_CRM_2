@@ -23,7 +23,7 @@ export async function hashPassword(password: unknown) {
   const salt = randomBytes(16).toString('hex');
   return `${salt}:${(await derivePassword(password, salt)).toString('hex')}`;
 }
-async function matches(password: string, encoded?: string) {
+export async function matchesPassword(password: string, encoded?: string) {
   const [salt, expected] = (encoded || `${'0'.repeat(32)}:${'0'.repeat(128)}`).split(':');
   const actual = await derivePassword(password, salt);
   return timingSafeEqual(actual, Buffer.from(expected, 'hex'));
@@ -70,6 +70,6 @@ export async function authenticate(req: IncomingMessage, body: AuthBody, signup:
     });
   }
   const { rows: [user] } = await database().query<AuthUser & { password_hash: string }>('select id,email,password_hash from auth.users where email=$1', [email]);
-  if (!await matches(password, user?.password_hash) || !user) throw fail(401, 'Correo o contraseña incorrectos.');
+  if (!await matchesPassword(password, user?.password_hash) || !user) throw fail(401, 'Correo o contraseña incorrectos.');
   return transaction(async client => ({ user: { id: user.id, email: user.email }, token: await createSession(client, user.id) }));
 }
