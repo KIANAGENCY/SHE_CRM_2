@@ -5,7 +5,7 @@ RUN npm ci
 COPY . .
 ARG VITE_BACKEND=n8n
 ENV VITE_BACKEND=$VITE_BACKEND
-RUN npm run build
+RUN npm test && npm run build
 
 FROM node:24-bookworm-slim
 WORKDIR /app
@@ -18,4 +18,4 @@ COPY --from=build --chown=node:node /app/api ./api
 RUN mkdir .local && chown node:node .local
 USER node
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["./node_modules/.bin/tsx", "server/start.ts"]

@@ -7,7 +7,7 @@ import { createServer } from "vite";
 
 test("Vite sirve los módulos y ejecuta las dos API por HTTP", async () => {
   const keys = ["N8N_WHATSAPP_WEBHOOK_URL", "WHATSAPP_RELAY_SECRET",
-    "META_WHATSAPP_VERIFY_TOKEN", "META_WHATSAPP_APP_SECRET"];
+    "META_WHATSAPP_VERIFY_TOKEN", "META_WHATSAPP_APP_SECRET", "VITE_API_BACKEND"];
   const original = Object.fromEntries(keys.map((key) => [key, process.env[key]]));
   const received = [];
   const upstream = http.createServer(async (req, res) => {
@@ -21,6 +21,7 @@ test("Vite sirve los módulos y ejecuta las dos API por HTTP", async () => {
   process.env.WHATSAPP_RELAY_SECRET = "test-relay-secret";
   process.env.META_WHATSAPP_VERIFY_TOKEN = "test-verify-token";
   process.env.META_WHATSAPP_APP_SECRET = "test-app-secret";
+  process.env.VITE_API_BACKEND = "node";
   let server;
   try {
     server = await createServer({

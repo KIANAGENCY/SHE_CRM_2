@@ -9,3 +9,14 @@ dist
 .figma
 .mcp.json
 *.log
+backend/vendor
+backend/node_modules
+backend/.env
+backend/.env.*
+backend/storage/logs
+backend/storage/framework/cache
+backend/bootstrap/cache/*.php
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/app/private/*
+backend/.phpunit.result.cache

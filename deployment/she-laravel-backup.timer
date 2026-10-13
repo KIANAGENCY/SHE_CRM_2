@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily SHE PostgreSQL backup at 03:30 Mazatlan
+
+[Timer]
+OnCalendar=*-*-* 03:30:00 America/Mazatlan
+Persistent=true
+Unit=she-laravel-backup.service
+
+[Install]
+WantedBy=timers.target

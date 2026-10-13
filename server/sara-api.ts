@@ -1,7 +1,7 @@
 import { openSaraStore } from './sara-store.ts';
 import { readRawBody, sendJson } from './webhook-utils.ts';
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { saraAccess } from './sara-access.ts';
+import { saraAccess, saraClientAddress } from './sara-access.ts';
 import { openSaraSessions, requiresSaraLogin, saraContext, saraCookie, saraToken } from './sara-session.ts';
 let store: ReturnType<typeof openSaraStore>;
 let sessions: ReturnType<typeof openSaraSessions>;
@@ -32,7 +32,7 @@ export async function saraApi(req: IncomingMessage,res: ServerResponse) {
       try { body = JSON.parse((await readRawBody(req)).toString('utf8')); }
       catch(error) { if(error.status)throw error; return sendJson(res,400,{error:'JSON inválido.'}); }
       if (!body || typeof body !== 'object' || Array.isArray(body)) return sendJson(res,400,{error:'Indica tu usuario y contraseña.'});
-      const result = await sessionStore().login(body.username,body.password,req.socket.remoteAddress || 'local');
+      const result = await sessionStore().login(body.username,body.password,saraClientAddress(req));
       saraCookie(res,result.token);
       return sendJson(res,200,{context:result.context});
     }

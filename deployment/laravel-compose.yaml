@@ -1,0 +1,79 @@
+name: she-laravel
+services:
+  postgres:
+    image: postgres:18-bookworm@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c
+    restart: unless-stopped
+    env_file: ${LARAVEL_SECRETS_DIRECTORY}/postgres.env
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    networks: [database]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U postgres -d she_crm"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    logging: &logs
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+  php:
+    build:
+      context: ..
+      dockerfile: deployment/laravel.Dockerfile
+      target: php
+    image: she-laravel-php:${LARAVEL_RELEASE:-latest}
+    restart: unless-stopped
+    env_file: ${LARAVEL_SECRETS_DIRECTORY}/laravel-runtime.env
+    volumes:
+      - ${LARAVEL_STORAGE_DIRECTORY}:/var/www/she/backend/storage
+      - ${LARAVEL_SECRETS_DIRECTORY}/sara-connection.json:/run/secrets/sara-connection.json:ro
+    networks: [application, database]
+    depends_on:
+      postgres: {condition: service_healthy}
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    logging: *logs
+  nginx:
+    build:
+      context: ..
+      dockerfile: deployment/laravel.Dockerfile
+      target: nginx
+    image: she-laravel-nginx:${LARAVEL_RELEASE:-latest}
+    restart: unless-stopped
+    ports: ["127.0.0.1:8082:8080"]
+    networks: [application, proxy]
+    depends_on: [php]
+    healthcheck:
+      test: [CMD-SHELL, "curl --fail --silent --show-error http://127.0.0.1:8080/api/crm/health > /dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    labels:
+      traefik.enable: ${LARAVEL_PUBLIC:-false}
+      traefik.docker.network: n8n-proxy
+      traefik.http.routers.she-laravel.rule: Host(`crm.hotelexpert.mx`)
+      traefik.http.routers.she-laravel.priority: '1000'
+      traefik.http.routers.she-laravel.service: she-laravel
+      traefik.http.routers.she-laravel.entrypoints: websecure
+      traefik.http.routers.she-laravel.tls.certresolver: le
+      traefik.http.services.she-laravel.loadbalancer.server.port: '8080'
+    logging: *logs
+  migrator:
+    image: she-laravel-php:${LARAVEL_RELEASE:-latest}
+    profiles: [tools]
+    env_file:
+      - ${LARAVEL_SECRETS_DIRECTORY}/laravel-runtime.env
+      - ${LARAVEL_SECRETS_DIRECTORY}/laravel-admin.env
+    networks: [database]
+    entrypoint: [php, artisan]
+    command: [she:migrate]
+    logging: *logs
+volumes:
+  postgres_data:
+networks:
+  database:
+    internal: true
+  application:
+  proxy:
+    external: true
+    name: n8n-proxy

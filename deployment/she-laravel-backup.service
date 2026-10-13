@@ -1,0 +1,14 @@
+[Unit]
+Description=SHE Laravel PostgreSQL private backup
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+User=root
+UMask=0077
+ExecStart=/usr/bin/python3 /usr/local/lib/she-vps/backup-laravel.py
+TimeoutStartSec=900
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import type { IncomingMessage } from 'node:http';
 import test from 'node:test';
-import { saraAccess } from '../server/sara-access.ts';
+import { saraAccess, saraClientAddress } from '../server/sara-access.ts';
 
 test('SARA conserva el acceso local y exige proxy autenticado y origen exacto en HTTPS', () => {
   const originalOrigin = process.env.SARA_PUBLIC_ORIGIN;
@@ -15,10 +15,15 @@ test('SARA conserva el acceso local y exige proxy autenticado y origen exacto en
     delete process.env.SARA_PROXY_SECRET;
     assert.equal(saraAccess(request({ host: 'localhost:3000' }, 'GET', '127.0.0.1')), null);
     assert.equal(saraAccess(request({ host: 'crm.hotelexpert.mx' })), 403);
+    assert.equal(saraClientAddress(request({ 'x-she-client-ip':'203.0.113.7' })), '172.18.0.2');
     process.env.SARA_PUBLIC_ORIGIN = 'https://crm.hotelexpert.mx';
     assert.equal(saraAccess(request({ host: 'crm.hotelexpert.mx' })), 503);
     process.env.SARA_PROXY_SECRET = secret;
     const headers = { host: 'crm.hotelexpert.mx', 'x-she-proxy-secret': secret };
+    assert.equal(saraClientAddress(request({ ...headers, 'x-she-client-ip':'203.0.113.7' })), '203.0.113.7');
+    assert.equal(saraClientAddress(request({ ...headers, 'x-she-client-ip':'2001:db8::7' })), '2001:db8::7');
+    assert.equal(saraClientAddress(request({ ...headers, 'x-she-client-ip':'203.0.113.7, 203.0.113.8' })), '172.18.0.2');
+    assert.equal(saraClientAddress(request({ ...headers, 'x-she-client-ip':'203.0.113.7', 'x-she-proxy-secret':'invalid' })), '172.18.0.2');
     assert.equal(saraAccess(request({ host: 'crm.hotelexpert.mx' })), 403);
     assert.equal(saraAccess(request({ ...headers, 'x-she-proxy-secret': 'invalid' })), 403);
     assert.equal(saraAccess(request(headers)), null);

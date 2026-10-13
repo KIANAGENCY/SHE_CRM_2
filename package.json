@@ -10,7 +10,7 @@
     "serve": "tsx scripts/serve.ts",
     "test": "tsx --test tests/*.test.ts",
     "check": "tsx scripts/check.ts && tsc --noEmit",
-    "start": "tsx server/start.ts",
+    "start": "php backend/artisan serve --host=127.0.0.1 --port=8000",
     "db:local": "tsx scripts/local-postgres.ts start",
     "db:stop": "tsx scripts/local-postgres.ts stop",
     "db:status": "tsx scripts/local-postgres.ts status",
@@ -18,7 +18,11 @@
     "test:db": "tsx scripts/test-postgres.ts",
     "db:backup": "tsx scripts/backup.ts",
     "sara:migration": "tsx scripts/sara-migration.ts",
-    "sara:restore": "tsx scripts/sara-migration.ts restore migration/sara-crm.enc"
+    "sara:restore": "tsx scripts/sara-migration.ts restore migration/sara-crm.enc",
+    "start:node": "tsx server/start.ts",
+    "laravel:setup": "tsx scripts/prepare-laravel.ts",
+    "laravel:migrate": "php backend/artisan she:migrate",
+    "test:laravel": "composer --working-dir=backend test"
   },
   "engines": {
     "node": ">=20.19"

@@ -1,0 +1,179 @@
+{
+  "products": [
+    {
+      "id": "catalogo-estandar",
+      "name": "Hotel Expert Estándar",
+      "size": "2 L concentrado · rinde 20 L",
+      "price": 450,
+      "sku": "",
+      "source": "documentos-autorizados",
+      "taxExcluded": true
+    },
+    {
+      "id": "catalogo-dual",
+      "name": "Hotel Expert Dual",
+      "size": "2 L concentrado · rinde 20 L",
+      "price": 550,
+      "sku": "",
+      "source": "documentos-autorizados",
+      "taxExcluded": true
+    },
+    {
+      "id": "catalogo-aroma-difusor",
+      "name": "Aroma para difusor",
+      "size": "1 L",
+      "price": 1799,
+      "sku": "",
+      "source": "documentos-autorizados",
+      "taxExcluded": true
+    },
+    {
+      "id": "catalogo-caja-aromas",
+      "name": "Caja de aromas",
+      "size": "15 atomizadores",
+      "price": 999,
+      "sku": "",
+      "source": "documentos-autorizados",
+      "taxExcluded": true
+    },
+    {
+      "id": "catalogo-descontaminador",
+      "name": "Descontaminador de habitaciones",
+      "size": "2 L · rinde 20 L",
+      "price": 1999,
+      "sku": "",
+      "source": "documentos-autorizados",
+      "taxExcluded": true
+    },
+    {
+      "id": "catalogo-difusor-pequeno",
+      "name": "Difusor para espacios pequeños",
+      "size": "Aproximadamente 50 m²",
+      "price": 999,
+      "sku": "",
+      "source": "documentos-autorizados",
+      "taxExcluded": true
+    },
+    {
+      "id": "catalogo-difusor-lobby",
+      "name": "Difusor para espacios grandes",
+      "size": "Lobbies",
+      "price": 3999,
+      "sku": "",
+      "source": "documentos-autorizados",
+      "taxExcluded": true
+    }
+  ],
+  "aromas": [
+    {
+      "id": "catalogo-aroma-1",
+      "name": "Bambú Menta",
+      "family": "Verde",
+      "notes": "Verde y refrescante, dulce, limpio y revitalizante.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-2",
+      "name": "Té Blanco",
+      "family": "Fresco",
+      "notes": "Suave, fresco, cítrico y ligeramente floral.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-3",
+      "name": "O. Bergamot",
+      "family": "Cítrico",
+      "notes": "Cítrico y elegante, suave y sofisticado.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-4",
+      "name": "Sandel",
+      "family": "Amaderado",
+      "notes": "Sándalo, cedro y matices cálidos.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-5",
+      "name": "Pepino Melón",
+      "family": "Fresco",
+      "notes": "Fresco, acuático y dulce.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-6",
+      "name": "Frutos Rojos",
+      "family": "Frutal",
+      "notes": "Dulce y frutal; moras, fresa y frambuesa.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-7",
+      "name": "Sencha Loz",
+      "family": "Herbal",
+      "notes": "Aromático y herbal, frescura del té verde.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-8",
+      "name": "Oriental Citrus",
+      "family": "Cítrico",
+      "notes": "Cítrico con fondo cálido.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-9",
+      "name": "Cedar",
+      "family": "Amaderado",
+      "notes": "Cedro con matices ahumados.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    },
+    {
+      "id": "catalogo-aroma-10",
+      "name": "Té Verde",
+      "family": "Herbal",
+      "notes": "Verde y fresco, herbal, limpio y natural.",
+      "intensity": "",
+      "areas": "",
+      "products": [],
+      "approved": true,
+      "source": "documentos-autorizados"
+    }
+  ]
+}

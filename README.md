@@ -1,8 +1,12 @@
 # Hotel Expert · CRM & Operación
 
-CRM alineado con [Figma](https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108): venta directa con Sara IA, muestras opcionales, cotizaciones, pedidos y seguimiento. Todo el código fuente usa TypeScript: interfaz React, funciones de Supabase, backend Node.js y scripts de base de datos y restauración. Incluye PostgreSQL local, con cuentas, espacios de trabajo y permisos reales.
+CRM alineado con [Figma](https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108): venta directa con Sara IA, muestras opcionales, cotizaciones, pedidos y seguimiento. La interfaz usa React y TypeScript; el backend principal usa Laravel y PostgreSQL, con cuentas, espacios de trabajo y permisos reales. Consulta [instalación local y VPS con Laravel](docs/LARAVEL.md). El código Node anterior se conserva como alternativa.
 
-## Captura local desde SARA IA en n8n
+## Laravel y PostgreSQL
+
+La configuración actual usa Laravel. Ejecuta `npm start` para el backend y `npm run dev` para React. La API del VPS usa PHP-FPM, Nginx y PostgreSQL; no requiere Node en producción. Los pasos de instalación, migración y respaldos están en [LARAVEL.md](docs/LARAVEL.md).
+
+## Captura desde SARA IA en el backend Node anterior
 
 La instalación local puede importar los contactos y todos los campos comerciales registrados por SARA, además del historial de mensajes capturado antes de ejecutar el modelo de IA. Los datos de demostración ya no se cargan en la aplicación.
 
