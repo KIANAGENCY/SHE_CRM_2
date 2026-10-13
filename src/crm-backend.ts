@@ -1,0 +1,15 @@
+import * as cloud from './cloud.ts';
+import * as sara from './sara-api.ts';
+export const n8nBackend=import.meta.env.VITE_BACKEND==='n8n';
+export const cloudEnabled=n8nBackend || cloud.cloudEnabled;
+export const localBackend=cloud.localBackend;
+export const getCloudContext=()=>n8nBackend?sara.context():cloud.getCloudContext();
+export const loadCloudState=(context:any)=>n8nBackend?sara.load():cloud.loadCloudState(context);
+export const pushCloudState=(state:any,context:any)=>n8nBackend?sara.push(state):cloud.pushCloudState(state,context);
+export const onAuthStateChange=cloud.onAuthStateChange;
+export const signIn=cloud.signIn;
+export const signOut=cloud.signOut;
+export const signUp=cloud.signUp;
+export const updateProductionOrder=cloud.updateProductionOrder;
+export const refreshSara=()=>sara.load(true);
+export const peekSara=sara.peek;

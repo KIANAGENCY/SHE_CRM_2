@@ -15,6 +15,7 @@ export default defineConfig(({ mode }) => {
     if (environment[key] !== undefined) process.env[key] = environment[key];
   }
   return {
+    server: { fs: { strict: true, deny: [".env", ".env.*", "**/.git/**", "**/.local/**", "**/*.log"] } },
     plugins: [
       react(),
       {

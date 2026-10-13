@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { seed } from "../src/data.ts";
+import { seed } from "./legacy-fixture.ts";
 import { fromRows, toRows, loadCloudState, pushCloudState, updateProductionOrder } from "../src/cloud.ts";
 
 test("la conversión de Supabase conserva los datos esenciales del CRM", () => {

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { seed } from "../src/data.ts";
+import { seed } from "./legacy-fixture.ts";
 import {
   totals,
   requestSample,

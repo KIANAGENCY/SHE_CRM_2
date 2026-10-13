@@ -169,14 +169,25 @@ small,
   gap: 10px;
 }
 .brand-logo {
-  width: 34px;
-  height: 34px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   flex: 0 0 auto;
+  filter: brightness(2);
 }
 .brand-copy {
   display: block;
 }
+.sara-sync { display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin:0 0 22px; padding:16px 20px; border:1px solid #23485a; border-radius:12px; background:#0d2334; }
+.sara-sync small { display:block; margin-top:5px; }
+.sara-sync button { margin-left:auto; }
+.sara-record { margin-top:24px; }
+.sara-fields { margin:0; }
+.sara-fields > div { padding:10px 0; border-bottom:1px solid #20364a; }
+.sara-fields dt { color:var(--muted); font-size:12px; }
+.sara-fields dd { margin:4px 0 0; overflow-wrap:anywhere; white-space:pre-wrap; }
+.sara-record details { margin-top:18px; }
+.sara-record summary { cursor:pointer; }
 .brand small {
   display: block;
   font-family: "Source Sans 3", "Segoe UI", sans-serif;

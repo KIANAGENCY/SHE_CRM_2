@@ -2,6 +2,14 @@
 
 CRM alineado con [Figma](https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108): venta directa con Sara IA, muestras opcionales, cotizaciones, pedidos y seguimiento. La interfaz y las funciones de Supabase usan React y TypeScript. También incluye un backend Node.js y PostgreSQL local, con cuentas, espacios de trabajo y permisos reales.
 
+## Captura local desde SARA IA en n8n
+
+La instalación local puede importar los contactos y todos los campos comerciales registrados por SARA, además del historial de mensajes capturado antes de ejecutar el modelo de IA. Los datos de demostración ya no se cargan en la aplicación.
+
+Este modo requiere Node.js 24, `VITE_BACKEND=n8n` en `.env.local` y la configuración privada del exportador en `.local/sara-connection.json`. Ejecutar `npm ci` y `npm run dev`, y abrir `http://127.0.0.1:5173`. La base SQLite, los datos reales y las credenciales quedan fuera de Git. Consultar [conexión, configuración y límites](docs/SARA_N8N.md).
+
+La sincronización consulta n8n cada cinco minutos mientras el CRM está abierto y visible. El botón **Actualizar desde SARA** fuerza una consulta. Las solicitudes de pedido y los comprobantes conservan su estado original; no generan automáticamente ventas ni pagos validados. Las ediciones del equipo se guardan localmente. Este modo no se publica como frontend estático ni sustituye el acceso multiusuario de PostgreSQL/Supabase.
+
 ## PostgreSQL local con API propia
 
 El backend local usa PostgreSQL y sesiones seguras en Node.js. Requiere Node.js 20.19+ y PostgreSQL 18 instalado (incluidos `initdb` y `pg_ctl`).
@@ -65,9 +73,9 @@ incluye los puertos 5173 y 4173.
 
 Clientes editables, búsqueda global, pipeline con dos rutas, muestras sin duplicados, catálogo de aromas aprobados, cotización con límites de descuento, aceptación y creación de pedido, autorización y etapas operativas, citas sin solapamientos, tareas de recompra, métricas derivadas de datos, registro de eventos y exportación JSON.
 
-Sin variables de Supabase, los datos se guardan en el navegador y el selector de perfil simula Dirección, Administración, Ventas y Producción. Con Supabase configurado, el acceso usa correo y contraseña y los cambios se sincronizan según el perfil asignado.
+Con el modo n8n configurado, los datos se guardan en SQLite y se muestran los expedientes completos de SARA. Sin backend configurado, el CRM inicia vacío y guarda los cambios en el navegador. Con Supabase configurado, el acceso usa correo y contraseña y los cambios se sincronizan según el perfil asignado.
 
-Sara todavía simula respuestas y no hay comunicaciones externas, cobros, facturación fiscal ni inventario real conectados. Consultar [alcance y pendientes de integración](docs/IMPLEMENTACION.md).
+La pantalla de Atención muestra los resúmenes y mensajes recibidos desde SARA; ya no genera respuestas simuladas. La disponibilidad del modelo y de los canales depende de n8n. No hay cobros, facturación fiscal ni inventario físico conectados. Consultar [la conexión actual](docs/SARA_N8N.md) y [el alcance previo](docs/IMPLEMENTACION.md).
 
 ## Puente de WhatsApp
 
