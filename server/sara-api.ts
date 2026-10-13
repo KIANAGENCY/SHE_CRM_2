@@ -1,8 +1,9 @@
-import { openSaraStore } from './sara-store.js';
-import { readRawBody, sendJson } from './webhook-utils.js';
-let store;
+import { openSaraStore } from './sara-store.ts';
+import { readRawBody, sendJson } from './webhook-utils.ts';
+import type { IncomingMessage, ServerResponse } from 'node:http';
+let store: ReturnType<typeof openSaraStore>;
 const localStore = () => store ||= openSaraStore();
-export async function saraApi(req,res) {
+export async function saraApi(req: IncomingMessage,res: ServerResponse) {
   try {
     res.setHeader('Cache-Control','no-store'); res.setHeader('X-Content-Type-Options','nosniff');
     const host = req.headers.host;

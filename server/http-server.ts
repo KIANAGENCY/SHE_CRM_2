@@ -2,7 +2,7 @@ import { createServer } from 'node:http';
 import { readFile, realpath } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { createHash } from 'node:crypto';
-import { apiMiddleware } from './api-middleware.js';
+import { apiMiddleware } from './api-middleware.ts';
 export async function createAppServer(directory = 'dist') {
   const root = await realpath(resolve(directory));
   const index = await readFile(resolve(root,'index.html'),'utf8');
@@ -14,7 +14,7 @@ export async function createAppServer(directory = 'dist') {
     connections.push(url.origin, `wss://${url.host}`);
   }
   const policy = `default-src 'self'; script-src 'self' ${hashes.join(' ')}; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src ${connections.join(' ')}; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'`;
-  const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon'};
+  const types: Record<string, string>={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon'};
   const server = createServer((req,res) => {
     res.setHeader('Content-Security-Policy',policy);
     res.setHeader('X-Content-Type-Options','nosniff');

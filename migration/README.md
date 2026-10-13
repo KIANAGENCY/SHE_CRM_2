@@ -4,6 +4,8 @@
 
 La llave privada de 32 bytes se entrega al titular por separado. No se guarda en GitHub. El respaldo no se puede restaurar sin esa llave. Conserva ambos archivos para la migración.
 
+`git clone` y `git pull` descargan `migration/sara-crm.enc` desde GitHub. Este respaldo incluye `.local/sara-connection.json` con la URL y el token de n8n, además de los datos y `.env.local`. El comando `sara:restore` recupera los tres archivos en una copia nueva usando tu llave privada; no necesitas guardar el token sin cifrar en el repositorio.
+
 ## Restaurar en un VPS nuevo
 
 Instalar Node.js 24 y Git. Copiar la llave al VPS por SSH/SFTP, en una carpeta privada fuera del repositorio. Restringir sus permisos con `chmod 600 /ruta/privada/CRM-SARA-LLAVE-PRIVADA.key`.
@@ -12,7 +14,7 @@ Instalar Node.js 24 y Git. Copiar la llave al VPS por SSH/SFTP, en una carpeta p
 git clone https://github.com/KIANAGENCY/SHE_CRM_2.git
 cd SHE_CRM_2
 npm ci
-node scripts/sara-migration.mjs restore migration/sara-crm.enc --key-file /ruta/privada/CRM-SARA-LLAVE-PRIVADA.key
+npm run sara:restore -- --key-file /ruta/privada/CRM-SARA-LLAVE-PRIVADA.key
 npm run build
 npm start
 ```
@@ -30,7 +32,7 @@ Abrir `http://127.0.0.1:3000` en la computadora que mantiene el túnel. Para acc
 ## Generar un corte nuevo
 
 ```sh
-node scripts/sara-migration.mjs backup migration/sara-crm-NUEVO.enc --key-file /ruta/privada/llave-NUEVA.key
+npm run sara:migration -- backup migration/sara-crm-NUEVO.enc --key-file /ruta/privada/llave-NUEVA.key
 ```
 
 La API de respaldo de SQLite permite obtener un corte consistente con el CRM activo. Cada respaldo usa una llave y un nonce nuevos. El script verifica la autenticación y la recuperación de los bytes antes de escribir el resultado.

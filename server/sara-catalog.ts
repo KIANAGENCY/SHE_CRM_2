@@ -1,6 +1,6 @@
 // Fuentes autorizadas: Precios Hotel Expert.pdf y Catalogo Aromas Hotel Expert ELAH.pdf, 12/10/2026.
 // Importes de referencia en MXN más IVA; no representan inventario, disponibilidad ni una cotización formal.
-export const products = [
+const productRows: [string, string, string, number][] = [
   ['estandar','Hotel Expert Estándar','2 L concentrado · rinde 20 L',450],
   ['dual','Hotel Expert Dual','2 L concentrado · rinde 20 L',550],
   ['aroma-difusor','Aroma para difusor','1 L',1799],
@@ -8,7 +8,8 @@ export const products = [
   ['descontaminador','Descontaminador de habitaciones','2 L · rinde 20 L',1999],
   ['difusor-pequeno','Difusor para espacios pequeños','Aproximadamente 50 m²',999],
   ['difusor-lobby','Difusor para espacios grandes','Lobbies',3999],
-].map(([id,name,size,price])=>({id:`catalogo-${id}`,name,size,price,sku:'',source:'documentos-autorizados',taxExcluded:true}));
+];
+export const products = productRows.map(([id,name,size,price])=>({id:`catalogo-${id}`,name,size,price,sku:'',source:'documentos-autorizados',taxExcluded:true}));
 export const aromas = [
   ['Bambú Menta','Verde','Verde y refrescante, dulce, limpio y revitalizante.'],
   ['Té Blanco','Fresco','Suave, fresco, cítrico y ligeramente floral.'],

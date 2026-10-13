@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { loadEnv } from 'vite';
 import { pathToFileURL } from 'node:url';
 
-export async function migrate(connectionString) {
+export async function migrate(connectionString: string) {
   if (!connectionString) throw new Error('Falta DATABASE_ADMIN_URL.');
   const client = new pg.Client({connectionString});
   await client.connect();

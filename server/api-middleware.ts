@@ -2,8 +2,8 @@ import type { IncomingMessage, ServerResponse } from "node:http";
 import relay from "../api/whatsapp-relay.ts";
 import metaWebhook from "../api/meta-whatsapp-webhook.ts";
 import { sendJson } from "./webhook-utils.ts";
-import { crmApi } from "./crm-api.js";
-import { saraApi } from "./sara-api.js";
+import { crmApi } from "./crm-api.ts";
+import { saraApi } from "./sara-api.ts";
 
 const routes = new Map([
   ["/api/whatsapp-relay", relay],

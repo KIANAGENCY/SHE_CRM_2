@@ -1,10 +1,13 @@
 import { randomUUID } from 'node:crypto';
-import { database, transaction } from './database.js';
-import { authenticate, cookie, currentUser, fail, hashPassword, hashToken, sessionToken } from './auth.js';
-import { readRawBody, sendJson } from './webhook-utils.js';
+import type { IncomingMessage, ServerResponse } from 'node:http';
+import type { PoolClient } from 'pg';
+import type { AuthUser, AuthBody } from './auth.ts';
+import { database, transaction } from './database.ts';
+import { authenticate, cookie, currentUser, fail, hashPassword, hashToken, sessionToken } from './auth.ts';
+import { readRawBody, sendJson } from './webhook-utils.ts';
 
 // SQL identifiers come exclusively from these allowlists, never from request text.
-const columns = {
+const columns: Record<string, string> = {
   clients: 'name legal_name rfc address contact position phone email owner_name last_order created_on aroma notes channel',
   products: 'name size price sku', aromas: 'name family notes intensity areas product_ids approved',
   opportunities: 'client_id stage route amount next_action owner_name created_on',
@@ -16,7 +19,10 @@ const columns = {
 };
 const readTables = [...Object.keys(columns), 'notifications', 'audit_log'];
 const labels = { owner: 'Dirección', admin: 'Administración', sales: 'Ventas', production: 'Producción' };
-function validateFields(values) {
+type Role = keyof typeof labels;
+interface CrmContext { user: AuthUser; workspace: { id: string; name: string }; role: Role; roleLabel: string }
+interface CrmBody extends AuthBody { workspace?: string; role?: string; revision?: unknown; changes?: unknown; orderId?: unknown }
+function validateFields(values: Record<string, unknown>) {
   const numeric=['stage','amount','price','subtotal','discount','total','shipping','version','invoice_amount','duration','discount_limit'];
   const booleans=['approved','confirmed','human','initialized'];
   const nullable=['last_order','shipping','acceptance_reference','accepted_at','opportunity_id','quote_id','due_on','delivered_on'];
@@ -33,25 +39,25 @@ function validateFields(values) {
     } else if (typeof value!=='string' || value.length>20000) throw fail(400,`Texto inválido: ${key}.`);
   }
 }
-async function context(client, user, workspaceId) {
+async function context(client: PoolClient, user: AuthUser, workspaceId?: string): Promise<CrmContext> {
   if (workspaceId && !/^[a-f0-9-]{36}$/i.test(workspaceId)) throw fail(400, 'Espacio inválido.');
-  const { rows: [membership] } = await client.query(`select m.role,w.id,w.name from public.workspace_members m
+  const { rows: [membership] } = await client.query<{ role: Role; id: string; name: string }>(`select m.role,w.id,w.name from public.workspace_members m
     join public.workspaces w on w.id=m.workspace_id where m.user_id=$1 ${workspaceId ? 'and w.id=$2' : ''} order by m.created_at,w.id limit 1`, workspaceId ? [user.id,workspaceId] : [user.id]);
   if (!membership) throw fail(403, 'No tienes acceso a este espacio.');
   return { user, workspace: { id: membership.id, name: membership.name }, role: membership.role, roleLabel: labels[membership.role] };
 }
-async function revision(client, workspace, expected) {
-  const { rows: [row] } = await client.query('select revision from public.workspace_revisions where workspace_id=$1 for update', [workspace]);
+async function revision(client: PoolClient, workspace: string, expected: unknown) {
+  const { rows: [row] } = await client.query<{ revision: string }>('select revision from public.workspace_revisions where workspace_id=$1 for update', [workspace]);
   if (!row || String(expected) !== row.revision) throw fail(409, 'Otro usuario modificó los datos. Recarga el CRM antes de guardar de nuevo.');
 }
-async function bump(client, workspace) {
-  const { rows: [row] } = await client.query('update public.workspace_revisions set revision=revision+1 where workspace_id=$1 returning revision', [workspace]);
+async function bump(client: PoolClient, workspace: string) {
+  const { rows: [row] } = await client.query<{ revision: string }>('update public.workspace_revisions set revision=revision+1 where workspace_id=$1 returning revision', [workspace]);
   return row.revision;
 }
-async function audit(client, ctx, action) {
+async function audit(client: PoolClient, ctx: CrmContext, action: string) {
   await client.query('insert into public.audit_log(workspace_id,id,actor,action) values($1,$2,$3,$4)', [ctx.workspace.id,randomUUID(),ctx.user.email,action]);
 }
-async function sync(client, ctx, changes) {
+async function sync(client: PoolClient, ctx: CrmContext, changes: unknown) {
   if (!Array.isArray(changes) || changes.length > 1000) throw fail(400, 'Se permiten hasta 1000 cambios por transacción.');
   if (ctx.role === 'production') throw fail(403, 'Producción solo puede registrar el empaque.');
   for (const change of changes) {
@@ -92,7 +98,7 @@ async function sync(client, ctx, changes) {
     await audit(client,ctx,`${operation} ${table}: ${id}`);
   }
 }
-async function bodyJson(req) {
+async function bodyJson(req: IncomingMessage): Promise<CrmBody> {
   if (!req.headers['content-type']?.startsWith('application/json')) throw fail(415, 'Se requiere application/json.');
   let body;
   try { body = JSON.parse((await readRawBody(req)).toString('utf8')); }
@@ -100,12 +106,12 @@ async function bodyJson(req) {
   if (!body || typeof body !== 'object' || Array.isArray(body)) throw fail(400, 'Se requiere un objeto JSON.');
   return body;
 }
-function sameOrigin(req) {
+function sameOrigin(req: IncomingMessage) {
   const expected = process.env.APP_ORIGIN || `http://${req.headers.host}`;
   if (!process.env.APP_ORIGIN && !['localhost','127.0.0.1','[::1]'].includes(new URL(expected).hostname)) throw fail(403, 'Configura APP_ORIGIN para este dominio.');
   if (req.headers.origin !== expected || req.headers['sec-fetch-site'] === 'cross-site') throw fail(403, 'Origen no autorizado.');
 }
-export async function crmApi(req, res) {
+export async function crmApi(req: IncomingMessage, res: ServerResponse) {
   const url = new URL(req.url, 'http://localhost');
   const path = url.pathname.slice('/api/crm'.length);
   try {
@@ -134,7 +140,7 @@ export async function crmApi(req, res) {
         const ctx = await context(client,user,url.searchParams.get('workspace'));
         if (path === '/session') return { context:ctx };
         if (path === '/members') return { members:(await client.query('select user_id,role from public.workspace_members where workspace_id=$1',[ctx.workspace.id])).rows };
-        const rows = {};
+        const rows: Record<string, Record<string, unknown>[]> = {};
         for (const table of readTables) rows[table] = (await client.query(`select * from public.${table} where workspace_id=$1 order by ${table === 'crm_settings' ? 'workspace_id' : 'id'}`,[ctx.workspace.id])).rows;
         const { rows: [version] } = await client.query('select revision from public.workspace_revisions where workspace_id=$1',[ctx.workspace.id]);
         return {rows,revision:version.revision};

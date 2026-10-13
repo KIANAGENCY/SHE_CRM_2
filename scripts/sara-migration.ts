@@ -7,16 +7,20 @@ import { pathToFileURL } from 'node:url';
 
 const allowed = ['.local/sara-crm.sqlite','.local/sara-connection.json','.env.local'];
 const aad = Buffer.from('SHECRM-MIGRATION-V1');
-async function exists(path) { try { await access(path); return true; } catch { return false; } }
+interface BackupFile { path: string; data: string }
+interface BackupPayload { version: number; createdAt: string; files: BackupFile[] }
+interface BackupOptions { root?: string; output: string; keyFile: string }
+interface RestoreOptions { input: string; keyFile: string; destination?: string }
+async function exists(path: string) { try { await access(path); return true; } catch { return false; } }
 
-export function encryptPayload(payload,key) {
+export function encryptPayload(payload: BackupPayload,key: Buffer): string {
   if (key.length!==32) throw new Error('La llave debe tener 32 bytes.');
   const iv=randomBytes(12),cipher=createCipheriv('aes-256-gcm',key,iv);
   cipher.setAAD(aad);
   const ciphertext=Buffer.concat([cipher.update(gzipSync(Buffer.from(JSON.stringify(payload)))),cipher.final()]);
   return JSON.stringify({format:'SHECRM-MIGRATION',version:1,cipher:'aes-256-gcm',iv:iv.toString('base64'),tag:cipher.getAuthTag().toString('base64'),data:ciphertext.toString('base64')});
 }
-export function decryptPayload(envelope,key) {
+export function decryptPayload(envelope: string,key: Buffer): BackupPayload {
   const item=JSON.parse(envelope);
   if(item.format!=='SHECRM-MIGRATION'||item.version!==1||item.cipher!=='aes-256-gcm'||key.length!==32)throw new Error('Respaldo o llave inválidos.');
   const decipher=createDecipheriv('aes-256-gcm',key,Buffer.from(item.iv,'base64'));
@@ -27,16 +31,16 @@ export function decryptPayload(envelope,key) {
   return payload;
 }
 
-export async function createBackup({root=process.cwd(),output,keyFile}) {
+export async function createBackup({root=process.cwd(),output,keyFile}: BackupOptions) {
   root=resolve(root);output=resolve(output);keyFile=resolve(keyFile);
   if(await exists(output)||await exists(keyFile))throw new Error('El respaldo o la llave ya existen. Usa nombres nuevos.');
   await mkdir(join(root,'.local'),{recursive:true});
   const temporary=join(root,'.local',`migration-snapshot-${randomUUID()}.sqlite`);
-  let db;
+  let db: DatabaseSync | null;
   try {
     db=new DatabaseSync(join(root,'.local/sara-crm.sqlite'),{readOnly:true});
     await backup(db,temporary);db.close();db=null;
-    const files=[];
+    const files: BackupFile[]=[];
     for(const path of allowed) files.push({path,data:(await readFile(path.endsWith('sara-crm.sqlite')?temporary:join(root,path))).toString('base64')});
     const key=randomBytes(32),payload={version:1,createdAt:new Date().toISOString(),files};
     const envelope=encryptPayload(payload,key);
@@ -50,7 +54,7 @@ export async function createBackup({root=process.cwd(),output,keyFile}) {
   } finally { db?.close();if(await exists(temporary))await unlink(temporary); }
 }
 
-export async function restoreBackup({input,keyFile,destination=process.cwd()}) {
+export async function restoreBackup({input,keyFile,destination=process.cwd()}: RestoreOptions) {
   const key=await readFile(resolve(keyFile));
   const payload=decryptPayload(await readFile(resolve(input),'utf8'),key);
   destination=resolve(destination);
@@ -65,7 +69,7 @@ if(process.argv[1] && import.meta.url===pathToFileURL(resolve(process.argv[1])).
   const [action,file,...args]=process.argv.slice(2);
   const keyIndex=args.indexOf('--key-file'),keyFile=keyIndex>=0?args[keyIndex+1]:null;
   const targetIndex=args.indexOf('--destination'),destination=targetIndex>=0?args[targetIndex+1]:process.cwd();
-  if(!['backup','restore'].includes(action)||!file||!keyFile)throw new Error('Uso: node scripts/sara-migration.mjs backup|restore ARCHIVO --key-file LLAVE [--destination CARPETA]');
+  if(!['backup','restore'].includes(action)||!file||!keyFile)throw new Error('Uso: tsx scripts/sara-migration.ts backup|restore ARCHIVO --key-file LLAVE [--destination CARPETA]');
   const result=action==='backup'?await createBackup({output:file,keyFile}):await restoreBackup({input:file,keyFile,destination});
   console.log(`${action==='backup'?'Respaldo cifrado verificado':'Respaldo restaurado'}: ${result.files} archivos, corte ${result.createdAt}.`);
 }

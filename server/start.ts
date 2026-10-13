@@ -1,6 +1,6 @@
 import { loadEnv } from 'vite';
-import { closeDatabase } from './database.js';
-import { createAppServer } from './http-server.js';
+import { closeDatabase } from './database.ts';
+import { createAppServer } from './http-server.ts';
 const env=loadEnv('production',process.cwd(),'');
 for (const [key,value] of Object.entries(env)) if (process.env[key]===undefined) process.env[key]=value;
 const server=await createAppServer();

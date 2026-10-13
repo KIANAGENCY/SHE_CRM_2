@@ -2,7 +2,7 @@ import pg from 'pg';
 import { randomBytes } from 'node:crypto';
 import { spawn } from 'node:child_process';
 import { loadEnv } from 'vite';
-import { migrate } from './migrate.mjs';
+import { migrate } from './migrate.ts';
 const env={...loadEnv('development',process.cwd(),''),...process.env};
 if (!env.DATABASE_ADMIN_URL || !env.DATABASE_URL) throw new Error('Configura PostgreSQL y ejecuta db:migrate primero.');
 const admin=new pg.Client({connectionString:env.DATABASE_ADMIN_URL});
@@ -16,9 +16,9 @@ try {
   await migrate(testAdmin.href);
   // Re-run to verify checksum-based, idempotent migration execution.
   await migrate(testAdmin.href);
-  const child=spawn(process.execPath,['--test','tests/postgres.integration.mjs'],{stdio:'inherit',windowsHide:true,
+  const child=spawn(process.execPath,['--import','tsx','--test','tests/postgres.integration.ts'],{stdio:'inherit',windowsHide:true,
     env:{...env,DATABASE_URL:testApp.href,TEST_DATABASE_ADMIN_URL:testAdmin.href,ALLOW_REGISTRATION:'true',APP_ORIGIN:'',COOKIE_SECURE:'false'}});
-  const code=await new Promise((resolve,reject)=>{child.once('error',reject);child.once('exit',resolve);});
+  const code=await new Promise<number | null>((resolve,reject)=>{child.once('error',reject);child.once('exit',resolve);});
   process.exitCode=code??1;
 } finally {
   // Only the database created in this invocation may be dropped.

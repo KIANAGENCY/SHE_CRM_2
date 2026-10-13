@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { openSaraStore, projectSnapshot } from '../server/sara-store.js';
+import { openSaraStore, projectSnapshot } from '../server/sara-store.ts';
 import { seed } from '../src/data.ts';
 
 const columns=[{name:'whatsapp_id',type:'string'},{name:'nombre',type:'string'},{name:'muestra_solicitada',type:'boolean'}];

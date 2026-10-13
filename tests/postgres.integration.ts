@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import pg from 'pg';
-import { crmApi } from '../server/crm-api.js';
-import { closeDatabase } from '../server/database.js';
+import { crmApi } from '../server/crm-api.ts';
+import { closeDatabase } from '../server/database.ts';
 
 test('API PostgreSQL real: autenticación, aislamiento y transacciones',async t=>{
   assert.match(new URL(process.env.TEST_DATABASE_ADMIN_URL).pathname,/^\/she_crm_test_[a-f0-9]+$/);

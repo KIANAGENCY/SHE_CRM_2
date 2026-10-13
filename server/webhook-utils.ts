@@ -1,28 +1,29 @@
 import { timingSafeEqual } from "node:crypto";
+import type { IncomingMessage, ServerResponse } from "node:http";
 
 export const MAX_BODY_BYTES = 1024 * 1024;
 
-export function sameSecret(supplied, expected) {
+export function sameSecret(supplied: unknown, expected: unknown) {
   if (typeof supplied !== "string" || typeof expected !== "string") return false;
   const left = Buffer.from(supplied);
   const right = Buffer.from(expected);
   return left.length === right.length && timingSafeEqual(left, right);
 }
 
-export function headerValue(request, name) {
+export function headerValue(request: IncomingMessage, name: string) {
   const value = request.headers?.[name];
   return Array.isArray(value) ? value[0] : value || "";
 }
 
-export function sendJson(response, status, body) {
+export function sendJson(response: ServerResponse, status: number, body: unknown) {
   response.statusCode = status;
   response.setHeader("content-type", "application/json; charset=utf-8");
   response.setHeader("cache-control", "no-store");
   response.end(JSON.stringify(body));
 }
 
-export async function readRawBody(request) {
-  const chunks = [];
+export async function readRawBody(request: IncomingMessage): Promise<Buffer> {
+  const chunks: Buffer[] = [];
   let size = 0;
   // Keep IncomingMessage alive so oversized bodies receive a JSON 413 response.
   const stream = request.iterator({ destroyOnReturn: false });
@@ -47,7 +48,7 @@ export function isWhatsAppEvent(body) {
       !Array.isArray(entry) && typeof entry.id === "string" && entry.id.length > 0);
 }
 
-export function webhookUrl(value) {
+export function webhookUrl(value: string | undefined) {
   try {
     const url = new URL(value);
     return ["http:", "https:"].includes(url.protocol) && !url.username && !url.password
@@ -57,12 +58,12 @@ export function webhookUrl(value) {
   }
 }
 
-export async function forwardEvent(response, url, body, headers) {
+export async function forwardEvent(response: ServerResponse, url: string, body: Buffer, headers: Record<string, string>) {
   try {
     const upstream = await fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json", ...headers },
-      body,
+      body: Buffer.from(body),
       redirect: "error",
       signal: AbortSignal.timeout(8_000),
     });

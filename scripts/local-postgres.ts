@@ -13,8 +13,8 @@ let env = {...loadEnv('development',process.cwd(),''),...process.env};
 const port = Number(env.PG_PORT || 55432);
 if (!Number.isInteger(port) || port < 1024 || port > 65535) throw new Error('PG_PORT debe ser un puerto entre 1024 y 65535.');
 const bin = env.PG_BIN || (process.platform === 'win32' ? 'C:/Program Files/PostgreSQL/18/bin' : '');
-const executable = name => bin ? join(bin,`${name}${process.platform==='win32'?'.exe':''}`) : name;
-const run = (name,args,required=true) => {
+const executable = (name: string) => bin ? join(bin,`${name}${process.platform==='win32'?'.exe':''}`) : name;
+const run = (name: string,args: string[],required=true) => {
   const result = spawnSync(executable(name),args,{windowsHide:true,encoding:'utf8',timeout:30000});
   if (required && result.status!==0) throw new Error(result.error?.message || result.stderr || result.stdout || `${name} falló`);
   return result;

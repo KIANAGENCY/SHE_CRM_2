@@ -4,7 +4,7 @@ import { randomBytes } from 'node:crypto';
 import { mkdtempSync, existsSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { encryptPayload, decryptPayload, restoreBackup } from '../scripts/sara-migration.mjs';
+import { encryptPayload, decryptPayload, restoreBackup } from '../scripts/sara-migration.ts';
 
 const payload={version:1,createdAt:'2026-10-12T00:00:00Z',files:['.local/sara-crm.sqlite','.local/sara-connection.json','.env.local'].map(path=>({path,data:Buffer.from(`contenido:${path}`).toString('base64')}))};
 test('el respaldo cifrado restaura todos los bytes y rechaza otra llave o un archivo alterado',()=>{

@@ -5,30 +5,33 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run check && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "serve": "tsx scripts/serve.ts",
     "test": "tsx --test tests/*.test.ts",
-    "check": "node scripts/check.mjs && tsc --noEmit",
-    "start": "node server/start.js",
-    "db:local": "node scripts/local-postgres.mjs start",
-    "db:stop": "node scripts/local-postgres.mjs stop",
-    "db:status": "node scripts/local-postgres.mjs status",
-    "db:migrate": "node scripts/migrate.mjs",
-    "test:db": "node scripts/test-postgres.mjs",
-    "db:backup": "node scripts/backup.mjs"
+    "check": "tsx scripts/check.ts && tsc --noEmit",
+    "start": "tsx server/start.ts",
+    "db:local": "tsx scripts/local-postgres.ts start",
+    "db:stop": "tsx scripts/local-postgres.ts stop",
+    "db:status": "tsx scripts/local-postgres.ts status",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "test:db": "tsx scripts/test-postgres.ts",
+    "db:backup": "tsx scripts/backup.ts",
+    "sara:migration": "tsx scripts/sara-migration.ts",
+    "sara:restore": "tsx scripts/sara-migration.ts restore migration/sara-crm.enc"
   },
   "engines": {
     "node": ">=20.19"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.117.2",
+    "pg": "8.23.1",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0",
-    "pg": "8.23.1"
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",

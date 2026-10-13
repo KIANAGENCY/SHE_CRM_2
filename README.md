@@ -1,12 +1,14 @@
 # Hotel Expert · CRM & Operación
 
-CRM alineado con [Figma](https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108): venta directa con Sara IA, muestras opcionales, cotizaciones, pedidos y seguimiento. La interfaz y las funciones de Supabase usan React y TypeScript. También incluye un backend Node.js y PostgreSQL local, con cuentas, espacios de trabajo y permisos reales.
+CRM alineado con [Figma](https://www.figma.com/design/Qs3uCDg51cxgPDhVQqajBF/Hotel-Expert?node-id=3-108): venta directa con Sara IA, muestras opcionales, cotizaciones, pedidos y seguimiento. Todo el código fuente usa TypeScript: interfaz React, funciones de Supabase, backend Node.js y scripts de base de datos y restauración. Incluye PostgreSQL local, con cuentas, espacios de trabajo y permisos reales.
 
 ## Captura local desde SARA IA en n8n
 
 La instalación local puede importar los contactos y todos los campos comerciales registrados por SARA, además del historial de mensajes capturado antes de ejecutar el modelo de IA. Los datos de demostración ya no se cargan en la aplicación.
 
 Este modo requiere Node.js 24, `VITE_BACKEND=n8n` en `.env.local` y la configuración privada del exportador en `.local/sara-connection.json`. Ejecutar `npm ci` y `npm run dev`, y abrir `http://127.0.0.1:5173`. La base SQLite, los datos reales y las credenciales quedan fuera de Git. Consultar [conexión, configuración y límites](docs/SARA_N8N.md).
+
+GitHub incluye estos archivos privados dentro del respaldo cifrado `migration/sara-crm.enc`. Después de clonar una copia nueva e instalar con `npm ci`, recupera la configuración y los datos con `npm run sara:restore -- --key-file RUTA_A_TU_LLAVE_PRIVADA`. Consulta [restauración para VPS](migration/README.md). La llave se conserva fuera del repositorio.
 
 La sincronización consulta n8n cada cinco minutos mientras el CRM está abierto y visible. El botón **Actualizar desde SARA** fuerza una consulta. Las solicitudes de pedido y los comprobantes conservan su estado original; no generan automáticamente ventas ni pagos validados. Las ediciones del equipo se guardan localmente. Este modo no se publica como frontend estático ni sustituye el acceso multiusuario de PostgreSQL/Supabase.
 
@@ -51,6 +53,8 @@ npm run build
 ```
 
 El build de Vite queda en `dist/` y puede desplegarse en Vercel. Las rutas usan hash y funcionan sin reglas especiales del servidor.
+
+`npm run check` comprueba los tipos y rechaza archivos fuente `.js`, `.jsx`, `.mjs` o `.cjs`. La compilación ejecuta esta comprobación para evitar implementaciones duplicadas. El JavaScript generado en `dist/` es necesario para el navegador. Los comandos del servidor y de mantenimiento ejecutan TypeScript con `tsx`; en el VPS instala también las dependencias de desarrollo mediante `npm ci` (sin `--omit=dev`).
 
 ## Supabase
 
