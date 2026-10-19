@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "she-crm-infrastructure": {
+      "command": "node",
+      "args": ["mcp/server.mjs"],
+      "env": {
+        "N8N_BASE_URL": "${N8N_BASE_URL}",
+        "N8N_API_KEY": "${N8N_API_KEY}",
+        "N8N_USERNAME": "${N8N_USERNAME}",
+        "N8N_PASSWORD": "${N8N_PASSWORD}",
+        "VPS_HOST": "${VPS_HOST}",
+        "VPS_USER": "${VPS_USER}",
+        "VPS_PORT": "${VPS_PORT}",
+        "VPS_SSH_KEY": "${VPS_SSH_KEY}"
+      }
+    },
+    "GitHub__3f6f5673": {
+      "type": "http",
+      "url": "${MCP_PROXY_BASE_URL}/proxy/3f6f5673-0c04-4d0c-a6af-f5b3d81200da",
+      "headers": {
+        "Authorization": "Bearer ${MCP_PROXY_AUTH_TOKEN}"
+      }
+    }
+  }
+}

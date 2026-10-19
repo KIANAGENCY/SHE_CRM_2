@@ -103,3 +103,9 @@ de n8n; los reintentos y la deduplicación por identificador de mensaje deben
 gestionarse en el flujo receptor.
 
 El repositorio inicial contenía solo el andamiaje de Figma. La documentación original de su API se conserva bajo `docs/`.
+
+## MCP de n8n y VPS
+
+Copia `.mcp.example.json` a `.mcp.json` para registrar el servidor local `she-crm-infrastructure`. Se inicia con Node.js, sin dependencias adicionales. Configura `N8N_BASE_URL` y una API key de n8n (`N8N_API_KEY`), o usuario y contraseña si Basic Auth está habilitado. Para el VPS, configura `VPS_HOST`, `VPS_USER` y opcionalmente `VPS_PORT` y `VPS_SSH_KEY`; si omites la llave, OpenSSH puede usar `ssh-agent`. Guarda estos valores en el entorno local del proceso que inicia Codex, nunca en el repositorio.
+
+Herramientas disponibles: salud de n8n, lista/consulta de workflows y comandos SSH limitados a diagnósticos de solo lectura.
