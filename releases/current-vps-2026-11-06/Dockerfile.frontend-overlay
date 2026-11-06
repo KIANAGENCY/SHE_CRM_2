@@ -1,0 +1,5 @@
+FROM she-laravel-php:meta-direct-20261106-r1 AS php
+COPY dist/ /var/www/she/frontend/
+
+FROM she-laravel-nginx:meta-direct-20261106-r1 AS nginx
+COPY dist/ /var/www/she/frontend/
